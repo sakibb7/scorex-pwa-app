@@ -1,3 +1,3 @@
 @echo off
-start cmd.exe /k "code ."
+start powershell.exe /k "code ."
 exit

@@ -46,12 +46,12 @@ module.exports = {
     }),
 
     new HtmlWebpackSimpleIncludePlugin([
-      {
-        tag: "<include-check />",
-        content: fs.readFileSync(
-          path.resolve(__dirname, "src/partials/check.html")
-        ),
-      },
+      // {
+      //   tag: "<include-darkLightToggle />",
+      //   content: fs.readFileSync(
+      //     path.resolve(__dirname, "src/partials/darkLightToggle.html")
+      //   ),
+      // },
     ]),
   ],
   output: {
