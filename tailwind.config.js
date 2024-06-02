@@ -25,6 +25,11 @@ module.exports = {
         n40: "#E0E0E0",
         n50: "#C4C4C4",
         n90: "#8E8E8E",
+
+        // dark mode
+        blackN30: "#202020",
+        blackN50: "#3E3E3E",
+        blackN500: "#B6B6B6",
       },
       padding: {
         30: "120px",
