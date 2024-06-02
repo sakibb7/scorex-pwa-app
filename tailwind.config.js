@@ -14,8 +14,17 @@ module.exports = {
       },
       colors: {
         p1: "#F52F3B", //primary color
+        r75: "#FBAAAF",
+        r50: "#FEEAEB",
+        o300: "#FEA11F",
         n900: "#141414",
+        n0: "#1E1E1E",
         n500: "#4A4A4A",
+        n20: "#F6F6F6",
+        n30: "#ECECEC",
+        n40: "#E0E0E0",
+        n50: "#C4C4C4",
+        n90: "#8E8E8E",
       },
       padding: {
         30: "120px",

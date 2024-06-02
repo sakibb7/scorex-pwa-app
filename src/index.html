@@ -12,7 +12,7 @@
     <title>ScoreX PWA HTML App</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body class="">
+  <body class="dark">
     <div class="bg-p1 h-full w-full absolute inset-0 z-50 preloader hidden">
       <div class="flex justify-center items-center h-full flex-col">
         <div class="wave-animation">
@@ -32,8 +32,10 @@
       </div>
     </div>
 
-    <section class="container pb-6">
-      <div class="bg-white dark:bg-n900">
+    <section class="container">
+      <div
+        class="bg-white dark:bg-n900 dark:text-white h-[100vh] overflow-auto pb-6"
+      >
         <div class="swiper bottom-steps-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -60,7 +62,7 @@
                 <h1 class="display-3 font-bold text-center">
                   Welcome to Instant Sports Updates 🖐️
                 </h1>
-                <p class="m-body text-n500 text-center pt-5">
+                <p class="m-body text-n500 text-center pt-5 dark:text-n30">
                   Real-time scores, match highlights, and breaking news your
                   ultimate sports companion awaits!
                 </p>
@@ -90,7 +92,7 @@
                 <h1 class="display-3 font-bold text-center">
                   Welcome to Instant Sports Updates 🖐️
                 </h1>
-                <p class="m-body text-n500 text-center pt-5">
+                <p class="m-body text-n500 text-center pt-5 dark:text-n30">
                   Real-time scores, match highlights, and breaking news your
                   ultimate sports companion awaits!
                 </p>
@@ -120,7 +122,7 @@
                 <h1 class="display-3 font-bold text-center">
                   Welcome to Instant Sports Updates 🖐️
                 </h1>
-                <p class="m-body text-n500 text-center pt-5">
+                <p class="m-body text-n500 text-center pt-5 dark:text-n30">
                   Real-time scores, match highlights, and breaking news your
                   ultimate sports companion awaits!
                 </p>
@@ -128,12 +130,12 @@
             </div>
           </div>
 
-          <div class="">
+          <div class="px-6">
             <div class="swiper-pagination onBoardingsliderPagingation"></div>
             <div class="swiper-nav-button flex justify-between items-center">
               <a
                 href="./sign-in.html"
-                class="skip-button font-semibold text-n500"
+                class="skip-button font-semibold text-n500 dark:text-n30"
                 >Skip</a
               >
 
@@ -145,10 +147,12 @@
               </a>
             </div>
             <div class="hidden onboardingNavButton">
-              <button class="primaryButton block">Get Started</button>
-              <button class="primaryButtonOutline mt-3 block">
+              <a href="./follow-teams.html" class="primaryButton block"
+                >Get Started</a
+              >
+              <a href="./sign-in.html" class="primaryButtonOutline mt-3 block">
                 Already Have an Account
-              </button>
+              </a>
             </div>
           </div>
         </div>

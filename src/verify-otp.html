@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Verify OTP - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="dark">
+    <main class="container p-6 dark:bg-n0 dark:text-white h-[100vh]">
+      <div class="flex flex-col justify-center items-center gap-3 text-center">
+        <h1 class="font-semibold heading-1">Verify OTP</h1>
+        <p class="text-n500 px-5 dark:text-n30">
+          Enter OTP code received to authenticate your identity and complete
+          verification
+        </p>
+      </div>
+
+      <form class="otp-form pt-8">
+        <div class="flex justify-between items-center gap-3 px-10">
+          <input type="text" class="item otp-form-item" maxlength="1" />
+          <input type="text" class="item otp-form-item" maxlength="1" />
+          <input type="text" class="item otp-form-item" maxlength="1" />
+          <input type="text" class="item otp-form-item" maxlength="1" />
+        </div>
+
+        <div class="s-body pt-4 text-center text-n500 dark:text-n30">
+          Didn’t receive email?
+          <a href="" class="text-p1 font-semibold">Resend</a>
+        </div>
+      </form>
+
+      <div class="pt-32">
+        <a href="" class="primaryButton block">Verify</a>
+      </div>
+    </main>
+
+    <!-- Javascript -->
+    <script src="./assets/js/plugins/opt-form.js"></script>
+  </body>
+</html>
