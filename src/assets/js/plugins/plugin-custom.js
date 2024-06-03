@@ -42,4 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
         navButton.classList.remove("hidden");
       }
     });
+
+  let liveScoreSlider = document.querySelectorAll(".live-score-carousel");
+  liveScoreSlider &&
+    liveScoreSlider.forEach(function (liveScoreSlider) {
+      var swiper = new Swiper(liveScoreSlider, {
+        loop: true,
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        slidesToShow: 1,
+        spaceBetween: 12,
+      });
+    });
 });
