@@ -133,6 +133,17 @@ body {
   .otp-form-item {
     @apply size-[60px] text-center text-xl font-semibold border border-n50 rounded-lg outline-none focus:border focus:border-p1;
   }
+
+  /* Active Tab Item */
+  .activeTabButton {
+    @apply text-red-500 !border-p1;
+  }
+  .activeTab {
+    @apply animationOne;
+  }
+  .hiddenTab {
+    @apply animationTwo hidden;
+  }
 }
 
 /* Circle Wave Animation */
@@ -220,4 +231,95 @@ body {
 
 .checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
   background-color: #f52f3b;
+}
+
+/* Keyframe animation */
+.circle {
+  animation: circleAnimation 15s linear infinite;
+}
+.zoomInOut {
+  animation: zoomInOutAnimation 10s linear infinite;
+}
+.jumping1 {
+  animation: jumpingImage1 3s linear infinite;
+}
+.jumping2 {
+  animation: jumpingImage2 3s linear infinite;
+}
+.slideRight {
+  animation: slideRight 3s linear infinite;
+}
+.slideLeft {
+  animation: slideLeft 3s linear infinite;
+}
+.animationTwo {
+  animation: fadeDown2 0.5s linear;
+}
+.lineAnimation {
+  animation: line 3s;
+}
+.animationOne {
+  animation: fadeDown 0.5s linear;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes zoomInOutAnimation {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes jumpingImage1 {
+  50% {
+    transform: translateY(10px);
+  }
+}
+@keyframes jumpingImage2 {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes slideRight {
+  50% {
+    transform: translateX(10px);
+  }
+}
+@keyframes slideLeft {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDown2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: auto !important;
+  }
 }

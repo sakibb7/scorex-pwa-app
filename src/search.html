@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Player Profile - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="">
+    <main class="container p-6 overflow-hidden dark:bg-n900 dark:text-white">
+      <div class="flex justify-between items-center gap-4">
+        <div class="flex justify-start items-center gap-4">
+          <div
+            class="relative text-white bg-p1 rounded-full size-10 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </div>
+        </div>
+        <div
+          class="w-full border border-n30 rounded-xl p-2.5 flex justify-start items-center gap-2 focus-within:border-p1 focus-within:bg-r50"
+        >
+          <i class="ph ph-magnifying-glass text-n90"></i>
+          <input
+            type="text"
+            placeholder="Search Country, Comprtition, etc"
+            class="placeholder:text-sm outline-none w-full text-sm bg-transparent"
+          />
+        </div>
+      </div>
+      <div class="pt-6">
+        <p class="text-base font-semibold text-n500">Popular Search</p>
+        <div class="pt-5">
+          <div
+            class="flex justify-between items-center pb-5 border-b border-dashed border-n50"
+          >
+            <div class="flex justify-start items-center gap-3">
+              <img
+                src="./assets/images/recent-update-competition-logo-1.png"
+                alt=""
+              />
+              <p class="text-base relative font-semibold">
+                Poland
+                <i
+                  class="ph-fill ph-star absolute top-0 -right-5 text-o300"
+                ></i>
+              </p>
+            </div>
+            <p class="text-base font-semibold">
+              <i class="ph ph-caret-right"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
