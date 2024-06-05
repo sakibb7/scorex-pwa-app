@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Match Stats - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="">
+    <main class="container py-6 overflow-hidden dark:bg-n900 dark:text-white">
+      <div class="flex justify-between items-center gap-4 px-6">
+        <div class="flex justify-start items-center gap-4">
+          <div
+            class="relative text-white bg-p1 rounded-full size-10 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </div>
+          <h1 class="heading-1 font-semibold">Matches</h1>
+        </div>
+      </div>
+
+      <div class="pt-8 px-6">
+        <div
+          class="bg-n20 border border-n30 rounded-xl p-5 flex flex-col gap-6"
+        >
+          <div class="">
+            <div class="flex justify-between items-center">
+              <p
+                class="text-sm bg-p1 rounded-[4px] text-white px-1 font-semibold"
+              >
+                1
+              </p>
+              <p class="font-semibold">Shot on target</p>
+              <p
+                class="text-sm bg-n900 rounded-[4px] text-white px-1 font-semibold"
+              >
+                2
+              </p>
+            </div>
+            <div class="flex justify-between items-center w-full gap-2 pt-3">
+              <div class="w-1/2 bg-n30 rounded-full h-2 relative">
+                <div
+                  class="h-2 bg-p1 absolute lineAnimation right-0 top-0 rounded-full w-[60%]"
+                ></div>
+              </div>
+              <div class="w-1/2 bg-n30 rounded-full h-2 relative">
+                <div
+                  class="h-2 bg-n900 absolute lineAnimation left-0 top-0 rounded-full w-[40%]"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
