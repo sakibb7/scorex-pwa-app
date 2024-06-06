@@ -137,12 +137,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (localStorageMode === "dark") {
     changeMode(localStorageMode);
 
-    chooseModeButton && chooseModeButton.classList?.remove("bg-n40");
-    chooseModeButton && chooseModeButton.classList?.add("bg-p1");
-
-    selectWhiteCircle && selectWhiteCircle.classList?.remove("left-0.5");
-    selectWhiteCircle &&
+    if (chooseModeButton) {
+      chooseModeButton.classList?.remove("bg-n40");
+      chooseModeButton.classList?.add("bg-p1");
+      selectWhiteCircle.classList?.remove("left-0.5");
       selectWhiteCircle.classList?.add("left-[calc(100%-18px)]");
+    }
   }
 
   // Light Mode Dark Mode
@@ -162,18 +162,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   switchButton?.forEach((e) => {
     e.addEventListener("click", () => {
-      if (selectWhiteCircle.classList.contains("left-0.5")) {
+      const circleButton = e.querySelector("div");
+      if (circleButton.classList.contains("left-0.5")) {
         e.classList.remove("bg-n40");
         e.classList.add("bg-p1");
 
-        selectWhiteCircle.classList.remove("left-0.5");
-        selectWhiteCircle.classList.add("left-[calc(100%-18px)]");
+        circleButton.classList.remove("left-0.5");
+        circleButton.classList.add("left-[calc(100%-18px)]");
       } else {
         e.classList.add("bg-n40");
         e.classList.remove("bg-p1");
 
-        selectWhiteCircle.classList.add("left-0.5");
-        selectWhiteCircle.classList.remove("left-[calc(100%-18px)]");
+        circleButton.classList.add("left-0.5");
+        circleButton.classList.remove("left-[calc(100%-18px)]");
       }
     });
   });
