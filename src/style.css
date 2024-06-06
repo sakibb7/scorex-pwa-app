@@ -108,10 +108,10 @@ body {
 
   /* Modal create */
   .modalOpen {
-    @apply visible scale-100 opacity-100;
+    @apply visible scale-100 opacity-100 origin-top;
   }
   .modalClose {
-    @apply invisible scale-0 opacity-0;
+    @apply invisible scale-0 opacity-0 origin-top;
   }
 
   /* How it works border */
