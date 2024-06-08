@@ -42,6 +42,66 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
+  // Select Radio Item
+  function selectRadioItem(suggestedItemsId, suggestedLanguagesClass) {
+    const suggestedItems = document.querySelector(`#${suggestedItemsId}`);
+    const suggestedLanguages = document.querySelectorAll(
+      `.${suggestedLanguagesClass}`
+    );
+
+    suggestedItems &&
+      suggestedLanguages.forEach((e) => {
+        e.addEventListener("click", () => {
+          const radioButton = e.querySelector(".radio-button");
+          const innerCircle = e.querySelector(".radio-circle");
+
+          if (!radioButton.classList.contains("acitveRadioOuter")) {
+            const activeRadioOuter =
+              suggestedItems.querySelector(".acitveRadioOuter");
+            const activeRadioInner =
+              suggestedItems.querySelector(".acitveRadioInner");
+
+            activeRadioOuter.classList.remove("acitveRadioOuter");
+            activeRadioOuter.classList.add("inactiveRadioOuter");
+            activeRadioInner.classList.remove("acitveRadioInner");
+            activeRadioInner.classList.add("inactiveRadioOuter");
+
+            radioButton.classList.remove("inactiveRadioOuter");
+            radioButton.classList.add("acitveRadioOuter");
+            innerCircle.classList.remove("inactiveRadioInner");
+            innerCircle.classList.add("acitveRadioInner");
+          }
+        });
+      });
+  }
+
+  // Modal with different open and close button
+  function modalDiffOpenClose(
+    modalClass,
+    modalOpenButtonClass,
+    modalCloseButtonClass,
+    closeModalClass,
+    openModalClass
+  ) {
+    const modal = document.querySelector(`.${modalClass}`);
+    const modalOpenButton = document.querySelector(`.${modalOpenButtonClass}`);
+    const modalCloseButton = document.querySelector(
+      `.${modalCloseButtonClass}`
+    );
+
+    modal &&
+      modalOpenButton.addEventListener("click", () => {
+        modal.classList.remove(closeModalClass);
+        modal.classList.add(openModalClass);
+      });
+
+    modal &&
+      modalCloseButton.addEventListener("click", () => {
+        modal.classList.remove(openModalClass);
+        modal.classList.add(closeModalClass);
+      });
+  }
+
   /*
 ===============================================================
 => Reusable Functions End
@@ -193,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let otherFaqAnswer = otherAccordion.nextElementSibling;
           otherFaqAnswer.style.height = null;
           otherAccordion.querySelector("i").classList.remove("text-p1");
-          otherAccordion.parentElement.classList.remove("border-p1");
+          otherAccordion.parentElement.classList.remove("!border-p1");
         }
       });
 
@@ -204,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
         faqAnswer.style.height = faqAnswer.scrollHeight + "px";
       }
 
-      accordion[index].parentElement.classList.add("border-p1");
+      accordion[index].parentElement.classList.add("!border-p1");
 
       // Toggle classes for the clicked accordion
       accordion[index].querySelector("i").classList.toggle("ph-caret-down");
@@ -227,7 +287,6 @@ document.addEventListener("DOMContentLoaded", function () {
     selectItemFromModal(sortByItem, selectCountryModal, selectedCountry);
 
   //Select City Modal
-  // Country Select Modal
   const selectCity = document.querySelector("#selectCity");
   const selectCityModal = document.querySelector(".selectCityModal");
 
@@ -239,4 +298,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
   selectedCity &&
     selectItemFromModal(sortByItem2, selectCityModal, selectedCity);
+
+  // Radio Button
+  selectRadioItem("suggestedItems", "suggested");
+  selectRadioItem("languageItems", "language");
+
+  // logout modal
+  modalDiffOpenClose(
+    "logoutModal",
+    "logoutModalButton",
+    "logoutCloseButton",
+    "hidden",
+    "openLogoutModal"
+  );
+
+  // Sidebar Modal
+  modalDiffOpenClose(
+    "sidebarModal",
+    "sidebarOpenButton",
+    "sidebarCloseButton",
+    "closeSidebarModal",
+    "openSidebarModal"
+  );
+  modalDiffOpenClose(
+    "sidebarBg",
+    "sidebarOpenButton",
+    "sidebarCloseButton",
+    "hidden",
+    "sidebarBgOpen"
+  );
 });

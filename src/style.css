@@ -144,6 +144,36 @@ body {
   .hiddenTab {
     @apply animationTwo hidden;
   }
+
+  /* Radio Button */
+  .acitveRadioOuter {
+    @apply border-p1 border p-0.5;
+  }
+  .inactiveRadioOuter {
+    @apply border-n90 border p-0.5;
+  }
+  .acitveRadioInner {
+    @apply bg-p1 border border-p1;
+  }
+  .inactiveRadioInner {
+    @apply border-n90 border;
+  }
+
+  /* logout modal */
+  .openLogoutModal {
+    @apply fixed inset-0 flex justify-center items-center;
+  }
+
+  /* sidebar modal */
+  .openSidebarModal {
+    @apply translate-x-0;
+  }
+  .closeSidebarModal {
+    @apply -translate-x-[100%];
+  }
+  .sidebarBgOpen {
+    @apply fixed inset-0;
+  }
 }
 
 /* Circle Wave Animation */
