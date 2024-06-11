@@ -102,6 +102,35 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
+  // Select One From Maney Item
+  function selectItemFromMany(
+    parentClass,
+    itemClass,
+    activeItemStyle,
+    inactiveItemStye
+  ) {
+    const selectParentClass = document.querySelector(`.${parentClass}`);
+    const items = selectParentClass?.querySelectorAll(`.${itemClass}`);
+
+    selectParentClass &&
+      items.forEach((e) => {
+        e.addEventListener("click", () => {
+          const activeItem = selectParentClass.querySelector(
+            `.${activeItemStyle}`
+          );
+          const inactiveItem = e.querySelector(`.${inactiveItemStye}`);
+
+          if (inactiveItem) {
+            activeItem.classList.remove(activeItemStyle);
+            activeItem.classList.add(inactiveItemStye);
+
+            inactiveItem.classList.remove(inactiveItemStye);
+            inactiveItem.classList.add(activeItemStyle);
+          }
+        });
+      });
+  }
+
   /*
 ===============================================================
 => Reusable Functions End
@@ -326,5 +355,20 @@ document.addEventListener("DOMContentLoaded", function () {
     "sidebarCloseButton",
     "hidden",
     "sidebarBgOpen"
+  );
+
+  // Select Games From Home Page
+  selectItemFromMany(
+    "selectGamesFromHeader",
+    "game",
+    "activeSelectedGame",
+    "inactiveSelectedGame"
+  );
+
+  selectItemFromMany(
+    "selectDate",
+    "dateItem",
+    "activeSelectDate",
+    "inactiveSelectDate"
   );
 });

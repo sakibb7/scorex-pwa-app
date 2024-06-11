@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Live Match - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="">
+    <main class="container py-6 overflow-hidden dark:bg-n900 dark:text-white">
+      <!-- Header Area Start -->
+      <div class="flex justify-between items-center px-6">
+        <div class="flex justify-start items-center gap-4">
+          <a
+            href="./home.html"
+            class="relative text-white bg-p1 rounded-full size-9 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </a>
+          <h1 class="heading-1 font-semibold">Premier League</h1>
+        </div>
+        <div
+          class="size-10 flex justify-center items-center border border-n30 rounded-full bg-n20"
+        >
+          <i class="ph-fill ph-star text-xl text-o300"></i>
+        </div>
+      </div>
+      <!-- Header Area End -->
+
+      <!-- Tab List Start -->
+      <div class="pt-8 pl-6">
+        <ul
+          class="flex justify-start items-center gap-3 overflow-auto pb-8 pr-6"
+        >
+          <li>
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Overview</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Matches</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Table</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Videos</a
+            >
+          </li>
+
+          <li class="shrink-0 w-fit">
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Team Stats</a
+            >
+          </li>
+          <li class="shrink-0 w-fit">
+            <a
+              href=""
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-p1 text-white border border-p1 block"
+              >Player Stats</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Tab List End -->
+
+      <!-- Player Stats Start -->
+      <div class="px-6 flex flex-col gap-8">
+        <div class="bg-n20 border border-n30 rounded-xl p-5">
+          <h2 class="heading-2 font-semibold uppercase">Goals</h2>
+          <div class="flex flex-col gap-6 pt-8">
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stat-img.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/ArminiaBielefeld.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Erling Haland</p>
+                  </div>
+                  <p class="text-sm">Arminia Bielefeld</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-1.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/arsenal.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Jacob Jones</p>
+                  </div>
+                  <p class="text-sm">Arsenal</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-2.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/chelsea.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Robert Fox</p>
+                  </div>
+                  <p class="text-sm">Chelsea</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-3.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/manCity.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Guy Hawkins</p>
+                  </div>
+                  <p class="text-sm">Manchester City</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-4.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/barcelona.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Esther Howard</p>
+                  </div>
+                  <p class="text-sm">Barcelona</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <a
+              href=""
+              class="text-center mt-5 py-2 px-4 bg-p1 rounded-md text-white font-medium block"
+              >See All</a
+            >
+          </div>
+        </div>
+        <div class="bg-n20 border border-n30 rounded-xl p-5">
+          <h2 class="heading-2 font-semibold uppercase">assists</h2>
+          <div class="flex flex-col gap-6 pt-8">
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stat-img.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/ArminiaBielefeld.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Erling Haland</p>
+                  </div>
+                  <p class="text-sm">Arminia Bielefeld</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-1.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/arsenal.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Jacob Jones</p>
+                  </div>
+                  <p class="text-sm">Arsenal</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-2.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/chelsea.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Robert Fox</p>
+                  </div>
+                  <p class="text-sm">Chelsea</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-3.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/manCity.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Guy Hawkins</p>
+                  </div>
+                  <p class="text-sm">Manchester City</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-4.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/barcelona.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Esther Howard</p>
+                  </div>
+                  <p class="text-sm">Barcelona</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <a
+              href=""
+              class="text-center mt-5 py-2 px-4 bg-p1 rounded-md text-white font-medium block"
+              >See All</a
+            >
+          </div>
+        </div>
+        <div class="bg-n20 border border-n30 rounded-xl p-5">
+          <h2 class="heading-2 font-semibold uppercase">Red Card</h2>
+          <div class="flex flex-col gap-6 pt-8">
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stat-img.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/ArminiaBielefeld.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Erling Haland</p>
+                  </div>
+                  <p class="text-sm">Arminia Bielefeld</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-1.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/arsenal.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Jacob Jones</p>
+                  </div>
+                  <p class="text-sm">Arsenal</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-2.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/chelsea.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Robert Fox</p>
+                  </div>
+                  <p class="text-sm">Chelsea</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-3.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/manCity.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Guy Hawkins</p>
+                  </div>
+                  <p class="text-sm">Manchester City</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-4.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/barcelona.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Esther Howard</p>
+                  </div>
+                  <p class="text-sm">Barcelona</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <a
+              href=""
+              class="text-center mt-5 py-2 px-4 bg-p1 rounded-md text-white font-medium block"
+              >See All</a
+            >
+          </div>
+        </div>
+        <div class="bg-n20 border border-n30 rounded-xl p-5">
+          <h2 class="heading-2 font-semibold uppercase">yellow card</h2>
+          <div class="flex flex-col gap-6 pt-8">
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stat-img.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/ArminiaBielefeld.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Erling Haland</p>
+                  </div>
+                  <p class="text-sm">Arminia Bielefeld</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-1.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/arsenal.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Jacob Jones</p>
+                  </div>
+                  <p class="text-sm">Arsenal</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-2.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/chelsea.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Robert Fox</p>
+                  </div>
+                  <p class="text-sm">Chelsea</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-3.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/manCity.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Guy Hawkins</p>
+                  </div>
+                  <p class="text-sm">Manchester City</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+            <div
+              class="flex justify-between items-center bg-white border border-n30 rounded-xl px-3 py-4"
+            >
+              <div class="flex justify-start items-center gap-3">
+                <p class="font-semibold">1</p>
+                <div class="-mt-8">
+                  <img
+                    src="./assets/images/player-stats-img-4.png"
+                    alt=""
+                    class="rounded-lg overflow-hidden"
+                  />
+                </div>
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img
+                      src="./assets/images/team-logo/barcelona.png"
+                      alt=""
+                      class="size-6"
+                    />
+                    <p class="font-semibold">Esther Howard</p>
+                  </div>
+                  <p class="text-sm">Barcelona</p>
+                </div>
+              </div>
+              <p class="font-semibold">18</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <a
+              href=""
+              class="text-center mt-5 py-2 px-4 bg-p1 rounded-md text-white font-medium block"
+              >See All</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Player Stats End -->
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
