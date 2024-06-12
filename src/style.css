@@ -180,7 +180,7 @@ body {
     @apply bg-p1 text-white;
   }
   .inactiveSelectedGame {
-    @apply bg-n30  dark:text-blackN30;
+    @apply bg-n30  dark:bg-blackN30;
   }
 
   /* Select Date Header */
@@ -188,7 +188,7 @@ body {
     @apply text-p1 bg-r50 relative after:w-4 after:h-[3px] after:rounded-full after:-bottom-9 after:left-5 after:bg-p1 after:absolute;
   }
   .inactiveSelectDate {
-    @apply text-n900 bg-n30;
+    @apply text-n900 bg-n30 dark:bg-blackN30 dark:text-white;
   }
 }
 
