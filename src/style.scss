@@ -44,10 +44,10 @@ body {
   h4,
   h5,
   h6 {
-    @apply m-0 p-0 !leading-[120%];
+    @apply m-0 p-0 leading-[120%];
   }
   p {
-    @apply !leading-[150%];
+    @apply leading-[150%];
   }
   .display-1 {
     @apply text-[52px];
@@ -136,7 +136,7 @@ body {
 
   /* Active Tab Item */
   .activeTabButton {
-    @apply text-red-500 !border-p1;
+    @apply text-red-500 border-p1;
   }
   .activeTab {
     @apply animationOne;
@@ -189,6 +189,53 @@ body {
   }
   .inactiveSelectDate {
     @apply text-n900 bg-n30 dark:bg-blackN30 dark:text-white;
+  }
+
+  /* test */
+  .helloWorldList {
+    .item {
+      .world {
+        @apply text-red-500;
+      }
+      &.active {
+        .world {
+          @apply text-black;
+        }
+      }
+    }
+  }
+
+  .radioItems {
+    .item {
+      .circle-outer {
+        @apply border border-n90 p-0.5;
+
+        .circle-inner {
+          @apply border border-n90;
+        }
+      }
+
+      &.active {
+        .circle-outer {
+          @apply border-p1;
+        }
+
+        .circle-inner {
+          @apply border-p1 bg-p1;
+        }
+      }
+    }
+  }
+
+  // Tab Items
+  .tabItems {
+    .item {
+      @apply px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 block;
+
+      &.active {
+        @apply bg-p1 text-white border border-p1;
+      }
+    }
   }
 }
 

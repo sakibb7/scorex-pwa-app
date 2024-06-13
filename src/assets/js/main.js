@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const activeItem = selectParentClass.querySelector(
             `.${activeItemStyle}`
           );
+          console.log(parentClass);
           const inactiveItem = e.querySelector(`.${inactiveItemStye}`);
 
           if (inactiveItem) {
@@ -129,6 +130,23 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       });
+  }
+
+  // Select One Item From Many
+  function selectItem(items) {
+    if (items) {
+      const item = items.querySelectorAll(".item");
+
+      item.forEach((e) =>
+        e.addEventListener("click", () => {
+          if (!e.classList.contains("active")) {
+            items.querySelector(".active").classList.remove("active");
+
+            e.classList.add("active");
+          }
+        })
+      );
+    }
   }
 
   /*
@@ -371,4 +389,39 @@ document.addEventListener("DOMContentLoaded", function () {
     "activeSelectDate",
     "inactiveSelectDate"
   );
+
+  // test
+  const helloWorldList = document.querySelector(".helloWorldList");
+
+  if (helloWorldList) {
+    const item = helloWorldList.querySelectorAll(".item");
+
+    item.forEach((e) =>
+      e.addEventListener("click", () => {
+        if (!e.classList.contains("active")) {
+          helloWorldList.querySelector(".active").classList.remove("active");
+
+          e.classList.add("active");
+        }
+      })
+    );
+  }
+
+  const radioItems = document.querySelector(".radioItems");
+
+  if (radioItems) {
+    const item = radioItems.querySelectorAll(".item");
+
+    item.forEach((e) =>
+      e.addEventListener("click", () => {
+        if (!e.classList.contains("active")) {
+          radioItems.querySelector(".active").classList.remove("active");
+
+          e.classList.add("active");
+        }
+      })
+    );
+  }
+
+  // Test End
 });
