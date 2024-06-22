@@ -31,6 +31,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //select active item
+  function selectOneItem(items) {
+    if (items) {
+      const item = items.querySelectorAll(".item");
+
+      item.forEach((e) =>
+        e.addEventListener("click", () => {
+          if (!e.classList.contains("active")) {
+            items.querySelector(".active").classList.remove("active");
+
+            e.classList.add("active");
+          }
+        })
+      );
+    }
+  }
+
   //select item from modal
   function selectItemFromModal(items, modalBox, slectText) {
     items.forEach((e) =>
@@ -40,39 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slectText.innerHTML = e.textContent;
       })
     );
-  }
-
-  // Select Radio Item
-  function selectRadioItem(suggestedItemsId, suggestedLanguagesClass) {
-    const suggestedItems = document.querySelector(`#${suggestedItemsId}`);
-    const suggestedLanguages = document.querySelectorAll(
-      `.${suggestedLanguagesClass}`
-    );
-
-    suggestedItems &&
-      suggestedLanguages.forEach((e) => {
-        e.addEventListener("click", () => {
-          const radioButton = e.querySelector(".radio-button");
-          const innerCircle = e.querySelector(".radio-circle");
-
-          if (!radioButton.classList.contains("acitveRadioOuter")) {
-            const activeRadioOuter =
-              suggestedItems.querySelector(".acitveRadioOuter");
-            const activeRadioInner =
-              suggestedItems.querySelector(".acitveRadioInner");
-
-            activeRadioOuter.classList.remove("acitveRadioOuter");
-            activeRadioOuter.classList.add("inactiveRadioOuter");
-            activeRadioInner.classList.remove("acitveRadioInner");
-            activeRadioInner.classList.add("inactiveRadioOuter");
-
-            radioButton.classList.remove("inactiveRadioOuter");
-            radioButton.classList.add("acitveRadioOuter");
-            innerCircle.classList.remove("inactiveRadioInner");
-            innerCircle.classList.add("acitveRadioInner");
-          }
-        });
-      });
   }
 
   // Modal with different open and close button
@@ -346,10 +330,6 @@ document.addEventListener("DOMContentLoaded", function () {
   selectedCity &&
     selectItemFromModal(sortByItem2, selectCityModal, selectedCity);
 
-  // Radio Button
-  selectRadioItem("suggestedItems", "suggested");
-  selectRadioItem("languageItems", "language");
-
   // logout modal
   modalDiffOpenClose(
     "logoutModal",
@@ -390,38 +370,12 @@ document.addEventListener("DOMContentLoaded", function () {
     "inactiveSelectDate"
   );
 
-  // test
-  const helloWorldList = document.querySelector(".helloWorldList");
+  //language selectd
+  const suggestedItems = document.querySelector(".suggestedItems");
+  const otherLanguages = document.querySelector(".otherLanguages");
 
-  if (helloWorldList) {
-    const item = helloWorldList.querySelectorAll(".item");
-
-    item.forEach((e) =>
-      e.addEventListener("click", () => {
-        if (!e.classList.contains("active")) {
-          helloWorldList.querySelector(".active").classList.remove("active");
-
-          e.classList.add("active");
-        }
-      })
-    );
-  }
-
-  const radioItems = document.querySelector(".radioItems");
-
-  if (radioItems) {
-    const item = radioItems.querySelectorAll(".item");
-
-    item.forEach((e) =>
-      e.addEventListener("click", () => {
-        if (!e.classList.contains("active")) {
-          radioItems.querySelector(".active").classList.remove("active");
-
-          e.classList.add("active");
-        }
-      })
-    );
-  }
+  suggestedItems && selectOneItem(suggestedItems);
+  otherLanguages && selectOneItem(otherLanguages);
 
   // Test End
 });
