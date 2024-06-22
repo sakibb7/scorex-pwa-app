@@ -13,7 +13,9 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="">
-    <main class="container py-6 overflow-hidden dark:bg-n900 dark:text-white">
+    <main
+      class="container py-6 overflow-hidden dark:bg-n900 dark:text-white pb-24"
+    >
       <div class="flex justify-between items-center gap-4 px-6">
         <div class="flex justify-start items-center gap-4">
           <div
@@ -31,54 +33,17 @@
         >
           <li>
             <a
-              href=""
-              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
-              >Overview</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
-              >Matches</a
-            >
-          </li>
-
-          <li>
-            <a
-              href=""
-              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
-              >Table</a
-            >
-          </li>
-
-          <li>
-            <a
-              href=""
-              class="px-5 py-2 rounded-lg font-semibold text-base bg-p1 text-white border border-p1 block"
+              href="./news-page.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-p1 border border-p1 block"
               >News</a
             >
           </li>
+
           <li>
             <a
-              href=""
+              href="./video-page.html"
               class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
               >Videos</a
-            >
-          </li>
-
-          <li class="shrink-0 w-fit">
-            <a
-              href=""
-              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
-              >Team Stats</a
-            >
-          </li>
-          <li class="shrink-0 w-fit">
-            <a
-              href=""
-              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
-              >Player Stats</a
             >
           </li>
         </ul>
@@ -100,10 +65,12 @@
               <p>12hr ago</p>
             </div>
             <div class="flex justify-between items-start gap-4 pr-1">
-              <h2 class="text-lg">
-                Press Conference Highlights: Notable Statements from Football
-                Figures
-              </h2>
+              <a href="./news-details.html">
+                <h2 class="text-lg">
+                  Press Conference Highlights: Notable Statements from Football
+                  Figures
+                </h2>
+              </a>
               <button>
                 <i class="ph-bold text-xl ph-dots-three-vertical"></i>
               </button>
@@ -126,9 +93,11 @@
                 />
               </div>
               <div class="">
-                <h3 class="text-base font-semibold">
-                  Transfer Rumors: Latest Buzz on Football Player Movements
-                </h3>
+                <a href="./news-details.html">
+                  <h3 class="text-base font-semibold">
+                    Transfer Rumors: Latest Buzz on Football Player Movements
+                  </h3>
+                </a>
                 <p class="text-n500 text-xs pt-2">12hr ago</p>
               </div>
             </div>
@@ -146,9 +115,11 @@
                 />
               </div>
               <div class="">
-                <h3 class="text-base font-semibold">
-                  Injury Updates: Current Health Status of Football Stars
-                </h3>
+                <a href="./news-details.html">
+                  <h3 class="text-base font-semibold">
+                    Injury Updates: Current Health Status of Football Stars
+                  </h3>
+                </a>
                 <p class="text-n500 text-xs pt-2">12hr ago</p>
               </div>
             </div>
@@ -167,9 +138,11 @@
                 />
               </div>
               <div class="">
-                <h3 class="text-base font-semibold">
-                  Financial Deals: Sponsorships and Investments in Football
-                </h3>
+                <a href="./news-details.html">
+                  <h3 class="text-base font-semibold">
+                    Financial Deals: Sponsorships and Investments in Football
+                  </h3>
+                </a>
                 <p class="text-n500 text-xs pt-2">12hr ago</p>
               </div>
             </div>
@@ -187,9 +160,11 @@
                 />
               </div>
               <div class="">
-                <h3 class="text-base font-semibold">
-                  Player Updates: Latest Scoop from the World Cup
-                </h3>
+                <a href="./news-details.html">
+                  <h3 class="text-base font-semibold">
+                    Player Updates: Latest Scoop from the World Cup
+                  </h3>
+                </a>
                 <p class="text-n500 text-xs pt-2">12hr ago</p>
               </div>
             </div>
@@ -200,6 +175,23 @@
         </div>
       </div>
       <!-- News area end -->
+
+      <!-- Bottom Tab Link Start -->
+      <div
+        class="fixed bottom-0 left-0 right-0 flex justify-center items-center z-50"
+      >
+        <div
+          class="bg-p1 text-white flex justify-around items-center py-4 w-[430px] text-2xl rounded-t-lg"
+        >
+          <a href="./home.html"><i class="ph ph-house"></i></a>
+          <a href="./favourite-matches.html"
+            ><i class="ph ph-heart-straight"></i
+          ></a>
+          <a href="./news-page.html"><i class="ph-fill ph-article"></i></a>
+          <a href="./settings.html"><i class="ph ph-user"></i></a>
+        </div>
+      </div>
+      <!-- Bottom Tab Link End -->
     </main>
 
     <!-- Js Dependecies -->
