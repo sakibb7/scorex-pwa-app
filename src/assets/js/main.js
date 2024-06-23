@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ===============================================================
 */
 
-  // //preloader
+  //preloader
   // const preloader = document.querySelector(".preloader");
   // setTimeout(function () {
   //   preloader && preloader.classList.add("active");
