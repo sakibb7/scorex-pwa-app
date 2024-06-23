@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Select One Item From Many
-  function selectItem(items) {
+  function selectOneItem(items) {
     if (items) {
       const item = items.querySelectorAll(".item");
 
@@ -131,6 +131,20 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       );
     }
+  }
+
+  function showPasswordFunc(item, passField) {
+    item.addEventListener("click", () => {
+      if (item.classList.contains("ph-eye-closed")) {
+        item.classList.add("ph-eye");
+        item.classList.remove("ph-eye-closed");
+        passField.setAttribute("type", "text");
+      } else {
+        item.classList.remove("ph-eye");
+        item.classList.add("ph-eye-closed");
+        passField.setAttribute("type", "password");
+      }
+    });
   }
 
   /*
@@ -377,5 +391,27 @@ document.addEventListener("DOMContentLoaded", function () {
   suggestedItems && selectOneItem(suggestedItems);
   otherLanguages && selectOneItem(otherLanguages);
 
-  // Test End
+  //country modal
+  const countryModal2 = document.querySelector(".countryModal2");
+  const countryModalBox2 = document.querySelector(".countryModalBox2");
+
+  if (countryModal2) {
+    const countryList2 = countryModal2.querySelectorAll(".item");
+    const selectedItem = countryModal2.querySelector(".selectedCountry2");
+
+    modalToggle(countryModal2, countryModalBox2, "modalOpen", "modalClose");
+    selectItemFromModal(countryList2, countryModalBox2, selectedItem);
+  }
+
+  //show password
+  const passowordShow = document.querySelector(".passowordShow");
+  const passwordField = document.querySelector(".passwordField");
+  if (passowordShow) {
+    showPasswordFunc(passowordShow, passwordField);
+  }
+  const confirmPasswordShow = document.querySelector(".confirmPasswordShow");
+  const confirmPasswordField = document.querySelector(".confirmPasswordField");
+  if (confirmPasswordShow) {
+    showPasswordFunc(confirmPasswordShow, confirmPasswordField);
+  }
 });
