@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Home - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main
+      class="container pt-6 pb-20 relative overflow-hidden dark:bg-black dark:text-white"
+    >
+      <!-- Header Section Start -->
+      <div class="flex justify-between items-center px-6">
+        <div
+          class="relative text-white bg-p1 rounded-full size-10 flex justify-center items-center sidebarOpenButton"
+        >
+          <i class="ph ph-list text-xl"></i>
+        </div>
+        <h1 class="text-n900 display-3 font-bold dark:text-white">
+          Score<span class="text-p1">X</span>
+        </h1>
+        <a
+          href="./search.html"
+          class="bg-n20 border border-n30 size-10 rounded-full flex justify-center items-center text-n90 dark:bg-blackN30 dark:border-blackN50"
+        >
+          <i class="ph ph-magnifying-glass"></i>
+        </a>
+      </div>
+      <!-- Header Section End -->
+
+      <!-- Select Sports section start -->
+      <div
+        class="pt-8 flex justify-start items-center gap-6 overflow-auto pl-6 selectGamesFromHeader"
+      >
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="flex activeSelectedGame justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-soccer-ball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Football</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-racquet"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Badminton</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-basketball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Basketball</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-soccer-ball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Soccer</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-cricket"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Cricket</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-golf"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Badminton</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-baseball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Basketball</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-motorcycle"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Soccer</p>
+        </div>
+      </div>
+      <!-- Select Sports section end -->
+
+      <!-- Date Select Start -->
+      <div
+        class="pt-8 flex justify-start items-center gap-4 pl-6 overflow-auto selectDate"
+      >
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center inactiveSelectDate"
+          >
+            15
+          </p>
+          <p class="text-xs">Sat</p>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center activeSelectDate"
+          >
+            16
+          </p>
+          <p class="text-xs">Sun</p>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center inactiveSelectDate"
+          >
+            17
+          </p>
+          <p class="text-xs">Mon</p>
+        </div>
+
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center inactiveSelectDate"
+          >
+            18
+          </p>
+          <p class="text-xs">Tue</p>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center inactiveSelectDate"
+          >
+            19
+          </p>
+          <p class="text-xs">Wed</p>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center inactiveSelectDate"
+          >
+            20
+          </p>
+          <p class="text-xs">Thu</p>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col gap-2 relative pb-4 dateItem"
+        >
+          <p
+            class="text-xl font-semibold rounded-full size-14 flex justify-center items-center inactiveSelectDate"
+          >
+            21
+          </p>
+          <p class="text-xs">Fri</p>
+        </div>
+      </div>
+      <!-- Date Select End -->
+
+      <!-- Live Match Updates State -->
+      <div class="pt-8 px-6">
+        <div class="flex justify-between items-center pb-5">
+          <h2 class="lead-text font-semibold">Latest Updates</h2>
+          <a href="./news-page.html" class="text-sm font-semibold text-p1"
+            >Show all</a
+          >
+        </div>
+        <div
+          class="bg-p1 rounded-xl p-5 flex justify-start items-start flex-col relative"
+        >
+          <img
+            src="./assets/images/latest-update-bg.png"
+            class="absolute top-0 right-0 bottom-0 h-full"
+            alt=""
+          />
+          <img
+            src="./assets/images/latest-update-img.png"
+            class="absolute -top-3 right-0 -bottom-"
+            alt=""
+          />
+          <div class="max-w-[150px]">
+            <p class="text-base text-white pb-14">
+              Can <span class="font-semibold">Lebron James</span> make this
+              Lakers roster work?
+            </p>
+            <a
+              href=""
+              class="text-p1 text-base font-medium py-2 px-4 rounded-lg bg-white"
+              >Continue</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Live Match Updates End -->
+
+      <!-- Live Match Slider Start -->
+      <div class="pt-12">
+        <div class="flex justify-between items-center pb-5 px-6">
+          <h2 class="lead-text font-semibold">Live Matches</h2>
+          <a href="./live-match.html" class="text-sm font-semibold text-p1"
+            >Show all</a
+          >
+        </div>
+        <div class="swiper live-score-carousel">
+          <div class="swiper-wrapper">
+            <div
+              class="bg-n900 p-5 rounded-2xl text-white swiper-slide relative"
+            >
+              <img
+                src="./assets/images/trophy.png"
+                class="absolute top-0 bottom-0 left-0 -z-10"
+                alt=""
+              />
+              <a
+                href="./premier-league-overview.html"
+                class="text-base font-semibold"
+                >Premier League</a
+              >
+              <p class="text-xs pt-1 pb-6">FIFA</p>
+              <div
+                class="flex justify-center items-center w-full border-t border-dashed border-n500"
+              >
+                <p class="bg-n900 -mt-3 w-fit px-2">VS</p>
+              </div>
+              <div class="flex justify-between items-center pt-3">
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/arsenal.png" alt="" />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Arsenal
+                  </p>
+                </a>
+                <div class="flex justify-center items-center flex-col gap-3">
+                  <p class="text-[40px] font-bold">4 : 3</p>
+                  <p
+                    class="border border-p1 rounded-full text-sm text-p1 py-1 px-5"
+                  >
+                    90+4
+                  </p>
+                </div>
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/everton.png" alt="" />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Everton
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="bg-n900 p-5 rounded-2xl text-white swiper-slide relative"
+            >
+              <img
+                src="./assets/images/trophy.png"
+                class="absolute top-0 bottom-0 left-0 -z-10"
+                alt=""
+              />
+              <a
+                href="./premier-league-overview.html"
+                class="text-base font-semibold"
+                >Premier League</a
+              >
+              <p class="text-xs pt-1 pb-6">FIFA</p>
+              <div
+                class="flex justify-center items-center w-full border-t border-dashed border-n500"
+              >
+                <p class="bg-n900 -mt-3 w-fit px-2">VS</p>
+              </div>
+              <div class="flex justify-between items-center pt-3">
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/manchester.png" alt="" />
+                  <p
+                    href="./team-overview.html"
+                    class="text-base font-semibold text-center pt-3"
+                  >
+                    Manchestar
+                  </p>
+                </a>
+                <div class="flex justify-center items-center flex-col gap-3">
+                  <p class="text-[40px] font-bold">2 : 2</p>
+                  <p
+                    class="border border-p1 rounded-full text-sm text-p1 py-1 px-5"
+                  >
+                    90+4
+                  </p>
+                </div>
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img
+                    src="./assets/images/team-logo/newcastleUnited.png"
+                    alt=""
+                  />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Newcastle
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="bg-n900 p-5 rounded-2xl text-white swiper-slide relative"
+            >
+              <img
+                src="./assets/images/trophy.png"
+                class="absolute top-0 bottom-0 left-0 -z-10"
+                alt=""
+              />
+              <a
+                href="./premier-league-overview.html"
+                class="text-base font-semibold"
+                >Friendly Match</a
+              >
+              <p class="text-xs pt-1 pb-6">FIFA</p>
+              <div
+                class="flex justify-center items-center w-full border-t border-dashed border-n500"
+              >
+                <p class="bg-n900 -mt-3 w-fit px-2">VS</p>
+              </div>
+              <div class="flex justify-between items-center pt-3">
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/barcelona.png" alt="" />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Barcelona
+                  </p>
+                </a>
+                <div class="flex justify-center items-center flex-col gap-3">
+                  <p class="text-[40px] font-bold">1 : 2</p>
+                  <p
+                    class="border border-p1 rounded-full text-sm text-p1 py-1 px-5"
+                  >
+                    90+4
+                  </p>
+                </div>
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/realmadrid.png" alt="" />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Real Madrid
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="bg-n900 p-5 rounded-2xl text-white swiper-slide relative"
+            >
+              <img
+                src="./assets/images/trophy.png"
+                class="absolute top-0 bottom-0 left-0 -z-10"
+                alt=""
+              />
+              <a
+                href="./premier-league-overview.html"
+                class="text-base font-semibold"
+                >World Cup 2022</a
+              >
+
+              <p class="text-xs pt-1 pb-6">FIFA</p>
+              <div
+                class="flex justify-center items-center w-full border-t border-dashed border-n500"
+              >
+                <p class="bg-n900 -mt-3 w-fit px-2">VS</p>
+              </div>
+              <div class="flex justify-between items-center pt-3">
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/tottenham.png" alt="" />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Tottenham
+                  </p>
+                </a>
+                <div class="flex justify-center items-center flex-col gap-3">
+                  <p class="text-[40px] font-bold">3 : 2</p>
+                  <p
+                    class="border border-p1 rounded-full text-sm text-p1 py-1 px-5"
+                  >
+                    90+4
+                  </p>
+                </div>
+                <a
+                  href="./team-overview.html"
+                  class="flex justify-center items-center flex-col"
+                >
+                  <img src="./assets/images/team-logo/Atletico.png" alt="" />
+                  <p class="text-base font-semibold text-center pt-3">
+                    Atletico
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Live Match Slider End -->
+
+      <!-- Recent Update Start -->
+      <div class="pt-8 px-6">
+        <div class="flex justify-between items-center pb-5">
+          <h2 class="lead-text font-semibold">Recent Update</h2>
+          <a href="" class="text-sm font-semibold text-p1">Show all</a>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="bg-n30 rounded-xl dark:bg-n900">
+            <div
+              class="flex justify-between items-center bg-n900 rounded-t-xl text-white p-5"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <img
+                  src="./assets/images/team-logo/premier-league-new-logo.png"
+                  alt=""
+                  class="size-12"
+                />
+                <div class="">
+                  <a
+                    href="./premier-league-overview.html"
+                    class="text-lg font-semibold relative"
+                  >
+                    English League
+                    <i
+                      class="ph-fill ph-star absolute -top-1 -right-6 text-o300"
+                    ></i>
+                  </a>
+                  <p class="pt-1">Group C</p>
+                </div>
+              </div>
+              <a href="">
+                <i class="ph ph-caret-right text-2xl"></i>
+              </a>
+            </div>
+            <div class="p-4 flex flex-col gap-4">
+              <a
+                href="./match-info.html"
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 dark:bg-black"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/arsenal.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Arsenal
+                        <i
+                          class="ph-fill ph-star absolute top-0 -right-5 text-o300"
+                        ></i>
+                      </p>
+                    </div>
+                    <p class="text-base font-semibold">1</p>
+                  </div>
+                  <div
+                    class="border-t border-dashed border-n50 dark:border-blackN50"
+                  >
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-black"
+                    >
+                      FT
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/ArminiaBielefeld.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        ArminiaBielefeld
+                      </p>
+                    </div>
+                    <p class="text-base font-semibold">1</p>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph-fill ph-star text-o300 text-2xl"></i>
+                </button>
+              </a>
+              <a
+                href="./match-info.html"
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 dark:bg-black"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/astonvilla.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Astonvilla
+                        <i
+                          class="ph-fill ph-star absolute top-0 -right-5 text-o300"
+                        ></i>
+                      </p>
+                    </div>
+                    <p class="text-base font-semibold">1</p>
+                  </div>
+                  <div
+                    class="border-t border-dashed border-n50 dark:border-blackN50"
+                  >
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-black"
+                    >
+                      FT
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/Atletico.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Atletico</p>
+                    </div>
+                    <p class="text-base font-semibold">1</p>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="bg-n30 rounded-xl dark:bg-n900">
+            <div
+              class="flex justify-between items-center bg-n900 rounded-t-xl text-white p-5"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <img
+                  src="./assets/images/team-logo/UEFA_Champions.jpg"
+                  alt=""
+                  class="size-11 rounded-full"
+                />
+                <div class="">
+                  <a
+                    href="./premier-league-overview.html"
+                    class="text-lg font-semibold relative"
+                  >
+                    UEFA League
+                    <i
+                      class="ph-fill ph-star absolute -top-1 -right-6 text-o300"
+                    ></i>
+                  </a>
+                  <p class="pt-1">Group C</p>
+                </div>
+              </div>
+              <a href="">
+                <i class="ph ph-caret-right text-2xl"></i>
+              </a>
+            </div>
+            <div class="p-4">
+              <a
+                href="./match-info.html"
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 dark:bg-black"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/barcelona.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Barcelona
+                        <i
+                          class="ph-fill ph-star absolute top-0 -right-5 text-o300"
+                        ></i>
+                      </p>
+                    </div>
+                    <p class="text-base font-semibold">1</p>
+                  </div>
+                  <div
+                    class="border-t border-dashed border-n50 dark:border-blackN50"
+                  >
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-black"
+                    >
+                      FT
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/BayernMünchen.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Bayern München
+                      </p>
+                    </div>
+                    <p class="text-base font-semibold">1</p>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recent Update End -->
+
+      <!-- Bottom Tab Link Start -->
+      <div
+        class="fixed bottom-0 left-0 right-0 flex justify-center items-center z-50"
+      >
+        <div
+          class="bg-p1 text-white flex justify-around items-center py-4 w-[430px] text-2xl rounded-t-lg"
+        >
+          <a href="./home.html"><i class="ph-fill ph-house"></i></a>
+          <a href="./favourite-matches.html"
+            ><i class="ph ph-heart-straight"></i
+          ></a>
+          <a href="./news-page.html"><i class="ph ph-article"></i></a>
+          <a href="./settings.html"><i class="ph ph-user"></i></a>
+        </div>
+      </div>
+      <!-- Bottom Tab Link End -->
+
+      <!-- Sidebar Area Start -->
+      <div class="hidden bg-black/30 sidebarBg z-[998]"></div>
+      <div
+        class="duration-500 z-[999] sidebarModal closeSidebarModal left-0 fixed top-0"
+      >
+        <div class="w-[280px] bg-white rounded-r-xl h-full p-6 dark:bg-black">
+          <div class="flex justify-between items-center">
+            <h1 class="text-n900 display-3 font-bold dark:text-white">
+              Score<span class="text-p1">X</span>
+            </h1>
+            <button class="text-2xl sidebarCloseButton">
+              <i class="ph ph-arrow-left"></i>
+            </button>
+          </div>
+          <ul class="pt-8 flex flex-col gap-4">
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 bg-p1 flex justify-center items-center rounded-full text-white text-2xl"
+                >
+                  <i class="ph ph-soccer-ball"></i>
+                </div>
+                <p class="s-text font-semibold text-p1">Football</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl text-p1"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-tennis-ball"></i>
+                </div>
+                <p class="s-text font-semibold">Tennis</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-basketball"></i>
+                </div>
+                <p class="s-text font-semibold">Basketball</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-hockey"></i>
+                </div>
+                <p class="s-text font-semibold">Hockey</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-volleyball"></i>
+                </div>
+                <p class="s-text font-semibold">Volleyball</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-dribbble-logo"></i>
+                </div>
+                <p class="s-text font-semibold">Handball</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-ping-pong"></i>
+                </div>
+                <p class="s-text font-semibold">Ping Pong</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-cricket"></i>
+                </div>
+                <p class="s-text font-semibold">Cricket</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-racquet"></i>
+                </div>
+                <p class="s-text font-semibold">Badminton</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-motorcycle"></i>
+                </div>
+                <p class="s-text font-semibold">Motorsport</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+
+            <li
+              class="flex justify-between items-center pb-4 border-b border-dashed border-n50"
+            >
+              <div class="flex justify-start items-center gap-4">
+                <div
+                  class="p-2 text-2xl bg-n30 flex justify-center items-center rounded-full dark:bg-blackN30"
+                >
+                  <i class="ph ph-person-simple-swim"></i>
+                </div>
+                <p class="s-text font-semibold">Swimming</p>
+              </div>
+              <div class="">
+                <i class="ph ph-caret-right text-xl"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar Area End -->
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./index.js"></script>
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+  </body>
+</html>

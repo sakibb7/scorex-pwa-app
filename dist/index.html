@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <div class="bg-p1 h-full w-full absolute inset-0 z-50 preloader hidden">
+      <div class="flex justify-center items-center h-full flex-col">
+        <div class="wave-animation">
+          <img
+            src="./assets/images/favicon.png"
+            alt=""
+            class="relative z-[500]"
+          />
+          <div class="waves wave-1"></div>
+          <div class="waves wave-2"></div>
+          <div class="waves wave-3"></div>
+        </div>
+
+        <h1 class="pt-8 text-white display-2 font-bold">
+          Score<span class="text-n900">X</span>
+        </h1>
+      </div>
+    </div>
+
+    <section class="container">
+      <div
+        class="bg-white dark:bg-n900 dark:text-white h-[100vh] overflow-auto pb-6"
+      >
+        <div class="swiper bottom-steps-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="./assets/images/onboarding-slider-img1.png"
+                  alt=""
+                  class="w-full"
+                />
+                <div class="absolute bottom-0 left-0 right-0">
+                  <img
+                    src="./assets/images/white-bg.png"
+                    alt=""
+                    class="dark:hidden"
+                  />
+                  <img
+                    src="./assets/images/dark-bg.png"
+                    alt=""
+                    class="dark:block hidden"
+                  />
+                </div>
+              </div>
+              <div class="px-6">
+                <h1 class="display-3 font-bold text-center">
+                  Welcome to Instant Sports Updates 🖐️
+                </h1>
+                <p
+                  class="m-body text-n500 text-center pt-5 dark:text-blackN500"
+                >
+                  Real-time scores, match highlights, and breaking news your
+                  ultimate sports companion awaits!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="./assets/images/onboarding-slider-img1.png"
+                  alt=""
+                  class="w-full"
+                />
+                <div class="absolute bottom-0 left-0 right-0">
+                  <img
+                    src="./assets/images/white-bg.png"
+                    alt=""
+                    class="dark:hidden"
+                  />
+                  <img
+                    src="./assets/images/dark-bg.png"
+                    alt=""
+                    class="dark:block hidden"
+                  />
+                </div>
+              </div>
+              <div class="px-6">
+                <h1 class="display-3 font-bold text-center">
+                  Welcome to Instant Sports Updates 🖐️
+                </h1>
+                <p
+                  class="m-body text-n500 text-center pt-5 dark:text-blackN500"
+                >
+                  Real-time scores, match highlights, and breaking news your
+                  ultimate sports companion awaits!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="./assets/images/onboarding-slider-img1.png"
+                  alt=""
+                  class="w-full"
+                />
+                <div class="absolute bottom-0 left-0 right-0">
+                  <img
+                    src="./assets/images/white-bg.png"
+                    alt=""
+                    class="dark:hidden"
+                  />
+                  <img
+                    src="./assets/images/dark-bg.png"
+                    alt=""
+                    class="dark:block hidden"
+                  />
+                </div>
+              </div>
+              <div class="px-6">
+                <h1 class="display-3 font-bold text-center">
+                  Welcome to Instant Sports Updates 🖐️
+                </h1>
+                <p
+                  class="m-body text-n500 text-center pt-5 dark:text-blackN500"
+                >
+                  Real-time scores, match highlights, and breaking news your
+                  ultimate sports companion awaits!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6">
+            <div class="swiper-pagination onBoardingsliderPagingation"></div>
+            <div class="swiper-nav-button flex justify-between items-center">
+              <a
+                href="./sign-in.html"
+                class="skip-button font-semibold text-n500 dark:text-blackN500"
+                >Skip</a
+              >
+
+              <a
+                class="ara-next bg-p1 text-white size-14 flex justify-center items-center text-2xl rounded-full"
+                id="goToHomePage"
+              >
+                <i class="ph ph-caret-right"></i>
+              </a>
+            </div>
+            <div class="hidden onboardingNavButton">
+              <a href="./follow-teams.html" class="primaryButton block"
+                >Get Started</a
+              >
+              <a href="./sign-in.html" class="primaryButtonOutline mt-3 block">
+                Already Have an Account
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./index.js"></script>
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+  </body>
+</html>

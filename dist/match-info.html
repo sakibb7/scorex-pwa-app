@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Match Info - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="">
+    <main
+      class="container py-6 overflow-hidden dark:bg-n900 dark:text-white min-h-[100vh]"
+    >
+      <div class="flex justify-between items-center gap-4 px-6">
+        <div class="flex justify-start items-center gap-4">
+          <a
+            href="./home.html"
+            class="relative text-white bg-p1 rounded-full size-10 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </a>
+          <h1 class="heading-1 font-semibold">Matches</h1>
+        </div>
+      </div>
+
+      <div class="px-6 pt-8">
+        <div
+          class="bg-n900 p-5 rounded-2xl text-white swiper-slide dark:bg-blackN30 relative"
+        >
+          <img
+            src="./assets/images/trophy.png"
+            class="absolute top-0 bottom-0 left-0 -z-10"
+            alt=""
+          />
+          <a
+            href="./premier-league-overview.html"
+            class="text-base font-semibold"
+            >Premier League</a
+          >
+          <p class="text-xs pt-1 pb-6">FIFA</p>
+          <div
+            class="flex justify-center items-center w-full border-t border-dashed border-n500"
+          >
+            <p class="bg-n900 -mt-3 w-fit px-2 dark:bg-blackN30">VS</p>
+          </div>
+          <div class="flex justify-between items-center pt-3">
+            <a
+              href="./team-overview.html"
+              class="flex justify-center items-center flex-col"
+            >
+              <img src="./assets/images/team-logo/arsenal.png" alt="" />
+              <p class="text-base font-semibold text-center pt-3">Arsenal</p>
+            </a>
+            <div class="flex justify-center items-center flex-col gap-3">
+              <p class="text-[40px] font-bold">4 : 3</p>
+              <p
+                class="border border-p1 rounded-full text-sm text-p1 py-1 px-5"
+              >
+                90+4
+              </p>
+            </div>
+            <a
+              href="./team-overview.html"
+              class="flex justify-center items-center flex-col"
+            >
+              <img src="./assets/images/team-logo/everton.png" alt="" />
+              <p class="text-base font-semibold text-center pt-3">Everton</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab List Start -->
+      <div class="pt-8 pl-6">
+        <ul
+          class="flex justify-start items-center gap-3 overflow-auto pb-8 pr-6 tabItems"
+        >
+          <li>
+            <a href="./match-info.html" class="item active">Info</a>
+          </li>
+          <li>
+            <a
+              href="./match-summery.html"
+              class="item dark:bg-blackN30 dark:border-blackN50"
+              >Summary</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./match-report.html"
+              class="item dark:bg-blackN30 dark:border-blackN50"
+              >Report</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./match-stats.html"
+              class="item dark:bg-blackN30 dark:border-blackN50"
+              >Stats</a
+            >
+          </li>
+          <li>
+            <a
+              href="./match-lineup.html"
+              class="item dark:bg-blackN30 dark:border-blackN50"
+              >Lineup</a
+            >
+          </li>
+
+          <li class="shrink-0 w-fit">
+            <a
+              href="./match-h2h.html"
+              class="item dark:bg-blackN30 dark:border-blackN50"
+              >H2H</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Tab List End -->
+
+      <div class="px-6 pb-8">
+        <h2 class="heading-2 font-bold pb-3">Match Info</h2>
+        <div
+          class="bg-r50 border border-p1 dark:bg-blackN30 dark:border-blackN50 rounded-xl grid grid-cols-2 gap-4 p-5"
+        >
+          <div class="col-span-1 flex justify-start items-center gap-2">
+            <div
+              class="bg-white dark:bg-blackN30 dark:border-blackN50 border border-n90 size-8 flex justify-center items-center rounded-full"
+            >
+              <i class="ph ph-calendar"></i>
+            </div>
+            <p class="text-sm font-medium">20 Nov, 13.00</p>
+          </div>
+          <div class="col-span-1 flex justify-start items-center gap-2">
+            <div
+              class="bg-white dark:bg-blackN30 dark:border-blackN50 border border-n90 size-8 flex justify-center items-center rounded-full"
+            >
+              <i class="ph ph-user"></i>
+            </div>
+            <p class="text-sm font-medium">Machael Oliver</p>
+          </div>
+          <div class="col-span-1 flex justify-start items-center gap-2">
+            <div
+              class="bg-white dark:bg-blackN30 dark:border-blackN50 border border-n90 size-8 flex justify-center items-center rounded-full"
+            >
+              <i class="ph ph-map-pin"></i>
+            </div>
+            <p class="text-sm font-medium">Stamford Bridge</p>
+          </div>
+          <div class="col-span-1 flex justify-start items-center gap-2">
+            <div
+              class="bg-white dark:bg-blackN30 dark:border-blackN50 border border-n90 size-8 flex justify-center items-center rounded-full"
+            >
+              <i class="ph ph-users-three"></i>
+            </div>
+            <p class="text-sm font-medium">45,201</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-6 flex flex-col gap-4">
+        <h2 class="heading-2 font-bold">Form</h2>
+        <div
+          class="bg-n20 border border-n30 rounded-xl flex flex-col gap-4 p-5 dark:bg-blackN30 dark:border-blackN50"
+        >
+          <div>
+            <div
+              class="flex justify-between items-center bg-n900 text-white p-3 rounded-t-xl"
+            >
+              <p class="text-lg font-semibold">Arsenal</p>
+              <div
+                class="flex justify-end items-center gap-1 text-xs font-semibold"
+              >
+                <p
+                  class="bg-p1 size-5 rounded-full flex justify-center items-center"
+                >
+                  L
+                </p>
+                <p
+                  class="bg-teal-500 size-5 rounded-full flex justify-center items-center"
+                >
+                  L
+                </p>
+                <p
+                  class="bg-p1 size-5 rounded-full flex justify-center items-center"
+                >
+                  L
+                </p>
+                <p
+                  class="bg-teal-500 size-5 rounded-full flex justify-center items-center"
+                >
+                  W
+                </p>
+                <p
+                  class="bg-teal-500 size-5 rounded-full flex justify-center items-center"
+                >
+                  W
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white flex justify-start items-center gap-3 p-4 overflow-auto dark:bg-black"
+            >
+              <div
+                class="bg-n20 border border-n30 rounded-xl flex justify-between items-center py-3 px-5 gap-3 shrink-0 dark:bg-blackN30 dark:border-blackN50"
+              >
+                <img
+                  src="./assets/images/team-logo/arsenal.png"
+                  class="size-6"
+                  alt=""
+                />
+                <p class="font-semibold text-nowrap">1 - 0</p>
+                <img
+                  src="./assets/images/team-logo/ErzgebirgeAue.png"
+                  class="size-6"
+                  alt=""
+                />
+              </div>
+              <div
+                class="bg-n20 border border-n30 rounded-xl flex justify-between items-center py-3 px-5 gap-3 shrink-0 dark:bg-blackN30 dark:border-blackN50"
+              >
+                <img
+                  src="./assets/images/team-logo/arsenal.png"
+                  class="size-6"
+                  alt=""
+                />
+                <p class="font-semibold text-nowrap">1 - 0</p>
+                <img
+                  src="./assets/images/team-logo/Dortmund.png"
+                  class="size-6"
+                  alt=""
+                />
+              </div>
+              <div
+                class="bg-n20 border border-n30 rounded-xl flex justify-between items-center py-3 px-5 gap-3 shrink-0 dark:bg-blackN30 dark:border-blackN50"
+              >
+                <img
+                  src="./assets/images/team-logo/arsenal.png"
+                  class="size-6"
+                  alt=""
+                />
+                <p class="font-semibold text-nowrap">1 - 0</p>
+                <img
+                  src="./assets/images/team-logo/CardiffCity.png"
+                  class="size-6"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-n20 border border-n30 rounded-xl flex flex-col gap-4 p-5 dark:bg-blackN30 dark:border-blackN50"
+        >
+          <div>
+            <div
+              class="flex justify-between items-center bg-n900 text-white p-3 rounded-t-xl"
+            >
+              <p class="text-lg font-semibold">Everton</p>
+              <div
+                class="flex justify-end items-center gap-1 text-xs font-semibold"
+              >
+                <p
+                  class="bg-teal-500 size-5 rounded-full flex justify-center items-center"
+                >
+                  L
+                </p>
+                <p
+                  class="bg-p1 size-5 rounded-full flex justify-center items-center"
+                >
+                  L
+                </p>
+                <p
+                  class="bg-p1 size-5 rounded-full flex justify-center items-center"
+                >
+                  L
+                </p>
+                <p
+                  class="bg-teal-500 size-5 rounded-full flex justify-center items-center"
+                >
+                  W
+                </p>
+                <p
+                  class="bg-teal-500 size-5 rounded-full flex justify-center items-center"
+                >
+                  W
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white flex justify-start items-center gap-3 p-4 overflow-auto dark:bg-black"
+            >
+              <div
+                class="bg-n20 border border-n30 rounded-xl flex justify-between items-center py-3 px-5 gap-3 shrink-0 dark:bg-blackN30 dark:border-blackN50"
+              >
+                <img
+                  src="./assets/images/team-logo/everton.png"
+                  class="size-6"
+                  alt=""
+                />
+                <p class="font-semibold text-nowrap">1 - 0</p>
+                <img
+                  src="./assets/images/team-logo/barcelona.png"
+                  class="size-6"
+                  alt=""
+                />
+              </div>
+              <div
+                class="bg-n20 border border-n30 rounded-xl flex justify-between items-center py-3 px-5 gap-3 shrink-0 dark:bg-blackN30 dark:border-blackN50"
+              >
+                <img
+                  src="./assets/images/team-logo/everton.png"
+                  class="size-6"
+                  alt=""
+                />
+                <p class="font-semibold text-nowrap">1 - 0</p>
+                <img
+                  src="./assets/images/team-logo/liverpool.png"
+                  class="size-6"
+                  alt=""
+                />
+              </div>
+              <div
+                class="bg-n20 border border-n30 rounded-xl flex justify-between items-center py-3 px-5 gap-3 shrink-0 dark:bg-blackN30 dark:border-blackN50"
+              >
+                <img
+                  src="./assets/images/team-logo/everton.png"
+                  class="size-6"
+                  alt=""
+                />
+                <p class="font-semibold text-nowrap">1 - 0</p>
+                <img
+                  src="./assets/images/team-logo/arsenal.png"
+                  class="size-6"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

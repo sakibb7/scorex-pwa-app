@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Complete Profile - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main
+      class="container p-6 dark:bg-n900 h-[100vh] overflow-auto dark:text-white"
+    >
+      <div class="flex flex-col justify-center items-center gap-3 text-center">
+        <h1 class="font-semibold heading-1">Complete Profile</h1>
+        <p class="text-n500 px-5 dark:text-blackN500">
+          Enter email and password. If you forget, then you have to do forgot
+          password.
+        </p>
+      </div>
+
+      <div class="pt-8 grid grid-cols-12 gap-3">
+        <div class="col-span-12">
+          <p class="s-text font-semibold pb-2">First Name</p>
+          <div
+            class="flex justify-between items-center gap-4 py-3 px-4 bg-n20 dark:bg-blackN30 rounded-xl border border-n30 dark:border-blackN30"
+          >
+            <input
+              type="text"
+              placeholder="First Name"
+              class="w-full placeholder:text-n500 bg-transparent outline-none"
+            />
+          </div>
+        </div>
+        <div class="col-span-12">
+          <p class="s-text font-semibold pb-2">Last Name</p>
+          <div
+            class="flex justify-between items-center gap-4 py-3 px-4 bg-n20 dark:bg-blackN30 rounded-xl border border-n30 dark:border-blackN30"
+          >
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="w-full placeholder:text-n500 bg-transparent outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="col-span-12">
+          <p class="s-text font-semibold pb-2">Email</p>
+          <div
+            class="flex justify-between items-center gap-4 py-3 px-4 bg-n20 dark:bg-blackN30 rounded-xl border border-n30 dark:border-blackN30"
+          >
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full placeholder:text-n500 bg-transparent outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="col-span-12">
+          <p class="s-text font-semibold pb-2">Phone Number</p>
+          <div
+            class="flex justify-between items-center gap-4 py-3 px-4 bg-n20 dark:bg-blackN30 rounded-xl border border-n30 dark:border-blackN30"
+          >
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="w-full placeholder:text-n500 bg-transparent outline-none"
+            />
+          </div>
+        </div>
+        <div class="col-span-12">
+          <p class="s-text font-semibold pb-2">Country</p>
+          <div
+            class="flex justify-between items-center gap-4 py-3 px-4 bg-n20 dark:bg-blackN30 rounded-xl border border-n30 dark:border-blackN30 relative countryModal2"
+          >
+            <p class="selectedCountry2">Uniter States</p>
+            <i class="ph ph-caret-down"></i>
+            <div
+              class="w-full absolute top-12 left-0 right-0 rounded-xl overflow-hidden z-10 countryModalBox2 modalClose duration-500"
+            >
+              <ul
+                class="flex flex-col gap-3 bg-p1 text-white p-3 max-h-[150px] overflow-y-auto"
+              >
+                <li class="item">United States</li>
+                <li class="item">United Kingdom</li>
+                <li class="item">Germany</li>
+                <li class="item">New Zealand</li>
+                <li class="item">Australia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12">
+          <p class="s-text font-semibold pb-2">City</p>
+          <div
+            class="flex justify-between items-center gap-4 py-3 px-4 bg-n20 dark:bg-blackN30 rounded-xl border border-n30 dark:border-blackN30"
+          >
+            <input
+              type="text"
+              placeholder="City"
+              class="w-full placeholder:text-n500 bg-transparent outline-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="pt-5">
+        <label
+          class="checkbox style-c relative pl-7 cursor-pointer select-none flex justify-start items-center pt-0.5"
+        >
+          <input
+            type="checkbox"
+            class="absolute opacity-0 cursor-pointer h-0 w-0"
+          />
+          <span
+            class="checkbox__checkmark absolute top-0.5 left-0 h-5 w-5 border bg-r50 border-r75 rounded after:absolute after:left-[7px] after:top-[2px] after:w-[5px] after:h-[12px] after:border-t-0 after:border-r-[2px] after:border-b-[2px] after:border-l-0 after:rotate-45 after:opacity-0 after:duration-500"
+          ></span>
+          <span class="s-body font-semibold dark:text-blackN500"
+            >I accept to all Term, Privacy and Fees</span
+          >
+        </label>
+      </div>
+      <div class="pt-10">
+        <a href="./sign-in.html" class="primaryButton block">Finish</a>
+      </div>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

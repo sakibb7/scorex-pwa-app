@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Set Notifications - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="container p-6 overflow-hidden dark:bg-n900 dark:text-white">
+      <div class="">
+        <a
+          href="./follow-teams.html"
+          class="ara-next bg-p1 text-white size-10 flex justify-center items-center text-2xl rounded-full"
+        >
+          <i class="ph ph-caret-left"></i>
+        </a>
+      </div>
+      <div class="pt-7">
+        <h1 class="heading-1 font-semibold">Set Notifications</h1>
+        <p class="s-body pt-3 text-n500 dark:text-blackN500">
+          Stay connected, Set Notifications, and never miss thrilling
+        </p>
+      </div>
+      <!-- Game List Start -->
+      <div
+        class="pt-8 flex justify-start items-center gap-6 overflow-auto pl-6 selectGamesFromHeader"
+      >
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="flex activeSelectedGame justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-soccer-ball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Football</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-racquet"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Badminton</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-basketball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Basketball</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-soccer-ball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Soccer</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-cricket"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Cricket</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-golf"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Badminton</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-baseball"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Basketball</p>
+        </div>
+        <div class="game flex flex-col justify-center items-center">
+          <div
+            class="inactiveSelectedGame flex justify-center items-center rounded-full text-3xl size-12"
+          >
+            <i class="ph ph-motorcycle"></i>
+          </div>
+          <p class="s-text font-semibold pt-3">Soccer</p>
+        </div>
+      </div>
+      <!-- Game List End -->
+
+      <div
+        class="bg-n30/60 flex justify-between items-center py-3 px-4 rounded-xl mt-6 dark:bg-blackN30"
+      >
+        <div class="flex justify-start items-center w-full">
+          <i class="ph ph-magnifying-glass text-n90 pr-2"></i>
+          <input
+            type="text"
+            placeholder="Search..."
+            class="w-full bg-transparent placeholder:text-n90 outline-none"
+          />
+        </div>
+        <button><i class="ph ph-microphone text-n90 ml-4"></i></button>
+      </div>
+      <div class="pt-5 grid grid-cols-12 gap-4">
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/barcelona.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Barcelona</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/arsenal.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Arsenal</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/newcastleUnited.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Newcastle United</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-r75 dark:border-blackN50 bg-r50 dark:bg-blackN30 rounded-2xl py-5 flex justify-center items-center flex-col"
+        >
+          <div
+            class="absolute top-2 right-2 border border-r75 rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph-fill ph-star text-o300"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/manchester.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Manchester City</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/Augsburg.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Augsburg</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/chelsea.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Chelsea</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/tottenham.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Tottenham</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/realmadrid.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Real Madrid</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/BayernMünchen.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Bayern München</p>
+        </div>
+        <div
+          class="col-span-6 relative border border-n50 rounded-2xl py-5 flex justify-center items-center flex-col dark:border-blackN50"
+        >
+          <div
+            class="absolute top-2 right-2 border rounded-full p-1 flex justify-center items-center"
+          >
+            <i class="ph ph-star text-n90 dark:text-blackN500"></i>
+          </div>
+          <img
+            src="./assets/images/team-logo/manCity.png"
+            class="size-10"
+            alt=""
+          />
+          <p class="pt-3 s-text font-semibold">Man City</p>
+        </div>
+      </div>
+      <div class="flex justify-between items-center gap-4 pt-8">
+        <a href="./sign-in.html" class="primaryButtonOutline">Skip</a>
+        <a href="./follow-competitions.html" class="primaryButton">Save</a>
+      </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

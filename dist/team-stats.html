@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Team Stats - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="">
+    <main class="container py-6 overflow-hidden dark:bg-n900 dark:text-white">
+      <!-- Header Area Start -->
+      <div class="flex justify-between items-center px-6">
+        <div class="flex justify-start items-center gap-4">
+          <a
+            href="./home.html"
+            class="relative text-white bg-p1 rounded-full size-9 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </a>
+          <h1 class="heading-1 font-semibold">Arsenal</h1>
+        </div>
+        <div
+          class="size-10 flex justify-center items-center border border-n30 rounded-full bg-n20"
+        >
+          <i class="ph-fill ph-star text-xl text-o300"></i>
+        </div>
+      </div>
+      <!-- Header Area End -->
+
+      <!-- Tab List Start -->
+      <div class="pt-8 pl-6">
+        <ul
+          class="flex justify-start items-center gap-3 overflow-auto pb-8 pr-6"
+        >
+          <li>
+            <a
+              href="./team-overview.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Overview</a
+            >
+          </li>
+          <li>
+            <a
+              href="./team-matches.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Matches</a
+            >
+          </li>
+
+          <li class="shrink-0 w-fit">
+            <a
+              href="./team-stats.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-p1 text-white border border-p1 block"
+              >Team Stats</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Tab List End -->
+
+      <div class="px-6">
+        <div
+          class="flex justify-between items-center bg-p1 text-white py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="text-center pl-1">#Attacking</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">P</p>
+            <p class="w-12 text-center">GD</p>
+            <p class="w-12 text-center">P</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Average ball poss...</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Goals scored</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Goals scored first</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Goals scored seco...</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Goals by foot</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Goals by head</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Penalties missed</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Shots</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Shots on target</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Shots off target</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center py-3 w-full font-semibold"
+        >
+          <div class="flex justify-start items-center">
+            <p class="pl-1">Shots on bar</p>
+          </div>
+          <div class="flex justify-start items-center">
+            <p class="w-12 text-center">14</p>
+            <p class="w-12 text-center">22</p>
+            <p class="w-12 text-center">37</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

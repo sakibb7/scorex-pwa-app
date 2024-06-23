@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Team Matches - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="">
+    <main class="container py-6 overflow-hidden dark:bg-n900 dark:text-white">
+      <!-- Header Area Start -->
+      <div class="flex justify-between items-center px-6">
+        <div class="flex justify-start items-center gap-4">
+          <a
+            href="./home.html"
+            class="relative text-white bg-p1 rounded-full size-9 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </a>
+          <h1 class="heading-1 font-semibold">Arsenal</h1>
+        </div>
+        <div
+          class="size-10 flex justify-center items-center border border-n30 rounded-full bg-n20"
+        >
+          <i class="ph-fill ph-star text-xl text-o300"></i>
+        </div>
+      </div>
+      <!-- Header Area End -->
+
+      <!-- Tab List Start -->
+      <div class="pt-8 pl-6">
+        <ul
+          class="flex justify-start items-center gap-3 overflow-auto pb-8 pr-6"
+        >
+          <li>
+            <a
+              href="./team-overview.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Overview</a
+            >
+          </li>
+          <li>
+            <a
+              href="./team-matches.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-p1 text-white border border-p1 block"
+              >Matches</a
+            >
+          </li>
+
+          <li class="shrink-0 w-fit">
+            <a
+              href="./team-stats.html"
+              class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50 block"
+              >Team Stats</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Tab List End -->
+
+      <!-- Tablist start -->
+      <div class="liveMatchTab px-6">
+        <ul
+          class="tab-button flex justify-between items-center text-lg font-semibold"
+        >
+          <li
+            id="tabOne"
+            class="activeTabButton tabButton w-full text-center pb-4 border-b-2 border-n70"
+          >
+            Fixtures
+          </li>
+          <li
+            id="tabTwo"
+            class="tabButton w-full text-center pb-4 border-b-2 border-n70"
+          >
+            Results
+          </li>
+        </ul>
+
+        <div class="pt-8">
+          <div class="tab-content activeTab" id="tabOne_data">
+            <div class="flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <p class="font-semibold text-n500">Today, 30 December</p>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/astonvilla.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Astonvilla</p>
+                    </div>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      14.00
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/Atletico.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Atletico</p>
+                    </div>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/barcelona.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Bercelona</p>
+                    </div>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      18.00
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/realmadrid.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Real Madrid</p>
+                    </div>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph-fill ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/BayernMünchen.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Bayern München
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      12.00
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/chelsea.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Chelsea</p>
+                    </div>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5 pt-5">
+              <div class="flex justify-between items-center">
+                <p class="font-semibold text-n500">Today, 31 December</p>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/astonvilla.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Astonvilla</p>
+                    </div>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      14.00
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/Atletico.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Atletico</p>
+                    </div>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/barcelona.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Bercelona</p>
+                    </div>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      16.00
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/realmadrid.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Real Madrid</p>
+                    </div>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph-fill ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/BayernMünchen.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Bayern München
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      12.00
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/chelsea.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Chelsea</p>
+                    </div>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content hiddenTab" id="tabTwo_data">
+            <div class="flex flex-col gap-5 px-6">
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/astonvilla.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Astonvilla</p>
+                    </div>
+                    <p class="font-semibold">1</p>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      Full time
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/Atletico.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Atletico</p>
+                    </div>
+                    <p class="font-semibold">2</p>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/barcelona.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Bercelona</p>
+                    </div>
+                    <p class="font-semibold">3</p>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      Full time
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/realmadrid.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Real Madrid</p>
+                    </div>
+                    <p class="font-semibold">0</p>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph-fill ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+              <div
+                class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
+              >
+                <div class="w-full">
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/BayernMünchen.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">
+                        Bayern München
+                      </p>
+                    </div>
+                    <p class="font-semibold">4</p>
+                  </div>
+                  <div class="border-t border-dashed border-n50">
+                    <p
+                      class="text-sm font-semibold -mt-[10px] bg-white px-2 w-fit ml-10 dark:bg-blackN30"
+                    >
+                      Full time
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center pt-2">
+                    <div class="flex justify-start items-center gap-3">
+                      <img
+                        src="./assets/images/team-logo/chelsea.png"
+                        class="size-10"
+                        alt=""
+                      />
+                      <p class="text-sm relative font-semibold">Chelsea</p>
+                    </div>
+                    <p class="font-semibold">3</p>
+                  </div>
+                </div>
+                <button>
+                  <i class="ph ph-star text-o300 text-2xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tablist end -->
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

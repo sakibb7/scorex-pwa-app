@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <title>Security - ScoreX PWA HTML App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="">
+    <main
+      class="container p-6 overflow-hidden dark:bg-n900 dark:text-white min-h-[100vh]"
+    >
+      <div class="flex justify-between items-center">
+        <div class="flex justify-start items-center gap-4">
+          <a
+            href="./settings.html"
+            class="relative text-white bg-p1 rounded-full size-9 flex justify-center items-center"
+          >
+            <i class="ph ph-caret-left text-xl"></i>
+          </a>
+          <h1 class="heading-1 font-semibold">Help Center</h1>
+        </div>
+      </div>
+
+      <div class="playerInfoTab pt-12">
+        <ul
+          class="tab-button flex justify-between items-center text-lg font-semibold"
+        >
+          <li
+            id="tabOne"
+            class="activeTabButton tabButton w-full text-center pb-4 border-b-2 border-n70"
+          >
+            FAQ
+          </li>
+          <li
+            id="tabTwo"
+            class="tabButton w-full text-center pb-4 border-b-2 border-n70"
+          >
+            Contact Us
+          </li>
+        </ul>
+
+        <div class="pt-8">
+          <div class="tab-content activeTab" id="tabOne_data">
+            <ul
+              class="flex justify-start items-center gap-3 overflow-auto pb-8"
+            >
+              <li
+                class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50"
+              >
+                General
+              </li>
+              <li
+                class="px-5 py-2 rounded-lg font-semibold text-base bg-p1 text-white border border-p1"
+              >
+                Account
+              </li>
+              <li
+                class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50"
+              >
+                Services
+              </li>
+
+              <li
+                class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50"
+              >
+                Payement
+              </li>
+              <li
+                class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50"
+              >
+                Restricted
+              </li>
+
+              <li
+                class="px-5 py-2 rounded-lg font-semibold text-base bg-n20 border border-n30 dark:bg-blackN30 dark:border-blackN50"
+              >
+                Matches
+              </li>
+            </ul>
+            <div
+              class="w-full border border-n30 dark:border-blackN50 rounded-xl p-2.5 flex justify-start items-center gap-2 focus-within:border-p1 focus-within:bg-r50"
+            >
+              <i class="ph ph-magnifying-glass text-n90"></i>
+              <input
+                type="text"
+                placeholder="Search"
+                class="placeholder:text-sm outline-none w-full text-sm bg-transparent"
+              />
+            </div>
+            <div class="pt-6">
+              <div class="flex flex-col gap-5">
+                <div
+                  class="faq-accordion-area border rounded-xl p-4 dark:border-blackN50"
+                >
+                  <div
+                    class="faq-accordion duration-500 flex justify-between items-center"
+                  >
+                    <h6 class="text-base font-semibold">What is ScoreX ?</h6>
+                    <div class="">
+                      <i class="ph-fill ph-caret-down ti-plus"> </i>
+                    </div>
+                  </div>
+                  <div class="duration-500 h-0 overflow-hidden">
+                    <p
+                      class="text-sm text-n500 border-t border-dashed border-n50 pt-3 mt-3 dark:text-blackN500"
+                    >
+                      ScoreX is greatest medical online consultation app
+                      platform in this century
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="faq-accordion-area border rounded-xl p-4 dark:border-blackN50"
+                >
+                  <div
+                    class="faq-accordion duration-500 flex justify-between items-center"
+                  >
+                    <h6 class="text-base font-semibold">
+                      What are the services in ScoreX?
+                    </h6>
+                    <div class="">
+                      <i class="ph-fill ph-caret-down ti-plus"> </i>
+                    </div>
+                  </div>
+                  <div class="duration-500 h-0 overflow-hidden">
+                    <p
+                      class="text-sm text-n500 border-t border-dashed border-n50 pt-3 mt-3 dark:text-blackN500"
+                    >
+                      ScoreX is greatest medical online consultation app
+                      platform in this century
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="faq-accordion-area border rounded-xl p-4 dark:border-blackN50"
+                >
+                  <div
+                    class="faq-accordion duration-500 flex justify-between items-center"
+                  >
+                    <h6 class="text-base font-semibold">
+                      Can I stream sports on ScoreX?
+                    </h6>
+                    <div class="">
+                      <i class="ph-fill ph-caret-down ti-plus"> </i>
+                    </div>
+                  </div>
+                  <div class="duration-500 h-0 overflow-hidden">
+                    <p
+                      class="text-sm text-n500 border-t border-dashed border-n50 pt-3 mt-3 dark:text-blackN500"
+                    >
+                      ScoreX is greatest medical online consultation app
+                      platform in this century
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="faq-accordion-area border rounded-xl p-4 dark:border-blackN50"
+                >
+                  <div
+                    class="faq-accordion duration-500 flex justify-between items-center"
+                  >
+                    <h6 class="text-base font-semibold">
+                      How can I contact ScoreX support?
+                    </h6>
+                    <div class="">
+                      <i class="ph-fill ph-caret-down ti-plus"> </i>
+                    </div>
+                  </div>
+                  <div class="duration-500 h-0 overflow-hidden">
+                    <p
+                      class="text-sm text-n500 border-t border-dashed border-n50 pt-3 mt-3 dark:text-blackN500"
+                    >
+                      ScoreX is greatest medical online consultation app
+                      platform in this century
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="faq-accordion-area border rounded-xl p-4 dark:border-blackN50"
+                >
+                  <div
+                    class="faq-accordion duration-500 flex justify-between items-center"
+                  >
+                    <h6 class="text-base font-semibold">
+                      How to close an ScoreX account?
+                    </h6>
+                    <div class="">
+                      <i class="ph-fill ph-caret-down ti-plus"> </i>
+                    </div>
+                  </div>
+                  <div class="duration-500 h-0 overflow-hidden">
+                    <p
+                      class="text-sm text-n500 border-t border-dashed border-n50 pt-3 mt-3 dark:text-blackN500"
+                    >
+                      ScoreX is greatest medical online consultation app
+                      platform in this century
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content hiddenTab" id="tabTwo_data">
+            <div class="border border-b30 rounded-xl p-5 flex flex-col gap-5">
+              <div
+                class="flex justify-start items-center gap-3 border-b border-dashed pb-5"
+              >
+                <i class="ph ph-headphones text-p1 text-2xl"></i>
+                <p class="text-base font-semibold">Customer Service</p>
+              </div>
+              <div
+                class="flex justify-start items-center gap-3 border-b border-dashed pb-5"
+              >
+                <i class="ph ph-whatsapp-logo text-p1 text-2xl"></i>
+                <p class="text-base font-semibold">WhatsApp</p>
+              </div>
+              <div
+                class="flex justify-start items-center gap-3 border-b border-dashed pb-5"
+              >
+                <i class="ph ph-globe text-p1 text-2xl"></i>
+                <p class="text-base font-semibold">Website</p>
+              </div>
+              <div
+                class="flex justify-start items-center gap-3 border-b border-dashed pb-5"
+              >
+                <i class="ph ph-facebook-logo text-p1 text-2xl"></i>
+                <p class="text-base font-semibold">Facebook</p>
+              </div>
+              <div
+                class="flex justify-start items-center gap-3 border-b border-dashed pb-5"
+              >
+                <i class="ph ph-x-logo text-p1 text-2xl"></i>
+                <p class="text-base font-semibold">Twitter</p>
+              </div>
+              <div class="flex justify-start items-center gap-3">
+                <i class="ph ph-instagram-logo text-p1 text-2xl"></i>
+                <p class="text-base font-semibold">Instagram</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js Dependecies -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/plugins/apexcharts.min.js"></script>
+    <script src="./assets/js/plugins/apexcharts-custom.js"></script>
+  </body>
+</html>
