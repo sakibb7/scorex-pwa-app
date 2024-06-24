@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\r\n\r\nif (\"serviceWorker\" in navigator) {\r\n  window.addEventListener(\"load\", () => {\r\n    navigator.serviceWorker\r\n      .register(\"/service-worker.js\")\r\n      .then((registration) => {\r\n        console.log(\"SW registered: \", registration);\r\n      })\r\n      .catch((registrationError) => {\r\n        console.log(\"SW registration failed: \", registrationError);\r\n      });\r\n  });\r\n}\r\n\n\n//# sourceURL=webpack://webpack-starter-file/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\r\n\r\nif (\"serviceWorker\" in navigator) {\r\n  window.addEventListener(\"load\", () => {\r\n    navigator.serviceWorker.register(\"/service-worker.js\");\r\n  });\r\n}\r\n\n\n//# sourceURL=webpack://webpack-starter-file/./src/index.js?");
 
 /***/ })
 

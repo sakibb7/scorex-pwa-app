@@ -520,10 +520,10 @@ define(['./workbox-74854057'], (function (workbox) { 'use strict';
     "revision": "f99f69bd58fecace2491241c91f841ff"
   }, {
     "url": "index.html",
-    "revision": "66ea812d6fa656c1dcb936c0a4e4d870"
+    "revision": "1f102ab30eea44f25cbf9c8ebfaeb026"
   }, {
     "url": "index.js",
-    "revision": "d56ca62bea13962523489cf1caa89889"
+    "revision": "5713475768adbf215fb08ff43ac4259d"
   }, {
     "url": "language.html",
     "revision": "a4f3e3152d57c80c7416c6136afa90dd"

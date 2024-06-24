@@ -1,7 +1,7 @@
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("scorex-site").then(function (cache) {
-      return cache.addAll(["/", "/index.html"]);
+      return cache.addAll(["/", "/index.html", "/complete-profile.html"]);
     })
   );
 });
