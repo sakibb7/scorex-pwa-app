@@ -1,5 +1,4 @@
 let isDark = localStorage.getItem("mode") === "dark";
-console.log(isDark);
 if (document.querySelector(".player-profile-chart")) {
   var options = {
     series: [

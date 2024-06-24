@@ -1,4 +1,11 @@
 "use strict";
+
+/*============================================ 
+======== Table of JS Functions =========
+
+
+============================================*/
+
 document.addEventListener("DOMContentLoaded", function () {
   /*
 ===============================================================
@@ -102,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const activeItem = selectParentClass.querySelector(
             `.${activeItemStyle}`
           );
-          console.log(parentClass);
+
           const inactiveItem = e.querySelector(`.${inactiveItemStye}`);
 
           if (inactiveItem) {
@@ -153,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ===============================================================
 */
 
-  // //preloader
+  //preloader
   // const preloader = document.querySelector(".preloader");
   // setTimeout(function () {
   //   preloader && preloader.classList.add("active");

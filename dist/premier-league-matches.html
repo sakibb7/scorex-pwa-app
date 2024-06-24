@@ -9,11 +9,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/swiper.min.css" />
-    <title>Live Match - ScoreX PWA HTML App</title>
+    <title>Premier League - ScoreX PWA HTML App</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
   <body class="">
-    <main class="container py-6 overflow-hidden dark:bg-n900 dark:text-white">
+    <main
+      class="container py-6 overflow-hidden dark:bg-n900 dark:text-white min-h-[100vh]"
+    >
       <!-- Header Area Start -->
       <div class="flex justify-between items-center px-6">
         <div class="flex justify-start items-center gap-4">
@@ -26,7 +28,7 @@
           <h1 class="heading-1 font-semibold">Premier League</h1>
         </div>
         <div
-          class="size-10 flex justify-center items-center border border-n30 rounded-full bg-n20"
+          class="size-10 flex justify-center items-center border border-n30 rounded-full bg-n20 dark:bg-blackN30 dark:border-blackN50"
         >
           <i class="ph-fill ph-star text-xl text-o300"></i>
         </div>
@@ -115,7 +117,7 @@
 
         <div class="pt-8">
           <div class="tab-content activeTab" id="tabOne_data">
-            <div class="flex flex-col gap-5 px-6">
+            <div class="flex flex-col gap-5">
               <div class="flex justify-between items-center">
                 <p class="font-semibold text-n500">Today, 30 December</p>
               </div>
@@ -230,7 +232,7 @@
                 </button>
               </div>
             </div>
-            <div class="flex flex-col gap-5 px-6 pt-5">
+            <div class="flex flex-col gap-5 pt-5">
               <div class="flex justify-between items-center">
                 <p class="font-semibold text-n500">Today, 31 December</p>
               </div>
@@ -347,7 +349,7 @@
             </div>
           </div>
           <div class="tab-content hiddenTab" id="tabTwo_data">
-            <div class="flex flex-col gap-5 px-6">
+            <div class="flex flex-col gap-5">
               <div
                 class="p-5 rounded-xl bg-white flex justify-between items-center gap-6 border border-n30 dark:bg-blackN30"
               >

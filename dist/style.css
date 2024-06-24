@@ -5,9 +5,29 @@
 /*!***********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/style.scss (1) ***!
   \***********************************************************************************************************************************************************************************/
-/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*/
+/*---------------------------------------
+    Template Name:   ScoreX -  HTML Mobile Template
+    Description:    Sports Live Update HTML Mobile Template
+    Author Name:    Pixelaxis
+    Author URI:     https://themeforest.net/user/pixelaxis
+    Theme URI:      https://scorex-ivory.vercel.app/
+    Version:        1.0
+-----------------------------------------
+             Table of contents
+-----------------------------------------
+Tailwind Import
+Google font Import
+Body Styles
+Scrollbar Animation
+Typography
+Main Container styles
+Margin Padding
+Circle Wave Animation
+Swiper Styles
+OTP Styles
+Keyframe Animations
+---------------------------------------*/
+/*! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -834,6 +854,9 @@ p{
 .left-3{
   left: 0.75rem;
 }
+.left-4{
+  left: 1rem;
+}
 .left-\[calc\(100\%-18px\)\]{
   left: calc(100% - 18px);
 }
@@ -845,6 +868,9 @@ p{
 }
 .right-3{
   right: 0.75rem;
+}
+.right-4{
+  right: 1rem;
 }
 .top-0{
   top: 0px;
@@ -1047,6 +1073,9 @@ p{
 .max-h-\[150px\]{
   max-height: 150px;
 }
+.max-h-\[500px\]{
+  max-height: 500px;
+}
 .min-h-\[100vh\]{
   min-height: 100vh;
 }
@@ -1161,9 +1190,6 @@ p{
 }
 .gap-1{
   gap: 0.25rem;
-}
-.gap-10{
-  gap: 2.5rem;
 }
 .gap-2{
   gap: 0.5rem;
@@ -1504,9 +1530,6 @@ p{
 }
 .pl-7{
   padding-left: 1.75rem;
-}
-.pr-1{
-  padding-right: 0.25rem;
 }
 .pr-2{
   padding-right: 0.5rem;
