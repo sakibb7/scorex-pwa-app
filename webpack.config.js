@@ -5,6 +5,7 @@ const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackSimpleIncludePlugin = require("html-webpack-simple-include-plugin");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 
 // Define the root directory containing the HTML files
 const rootDirectory = path.resolve(__dirname, "src");
@@ -101,6 +102,13 @@ module.exports = {
       //   ),
       // },
     ]),
+
+    new WorkboxPlugin.GenerateSW({
+      // these options encourage the ServiceWorkers to get in there fast
+      // and not allow any straggling "old" SWs to hang around
+      clientsClaim: true,
+      skipWaiting: true,
+    }),
   ],
   output: {
     filename: "index.js",
