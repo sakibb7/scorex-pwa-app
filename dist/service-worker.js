@@ -537,6 +537,9 @@ define(['./workbox-74854057'], (function (workbox) { 'use strict';
     "url": "live-match.html",
     "revision": "9feb2c899fd321bb2eae585dee974647"
   }, {
+    "url": "manifest.json",
+    "revision": "31be39fc538096f3f0c82c4f55ef3574"
+  }, {
     "url": "match-h2h.html",
     "revision": "177394a8b23f5473448a422accdfc713"
   }, {

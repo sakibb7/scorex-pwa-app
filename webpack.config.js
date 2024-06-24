@@ -90,7 +90,10 @@ module.exports = {
       filename: "style.css",
     }),
     new CopyPlugin({
-      patterns: [{ from: "src/assets", to: "assets" }],
+      patterns: [
+        { from: "src/assets", to: "assets" },
+        { from: "src/manifest.json", to: "manifest.json" },
+      ],
     }),
     ...htmlFiles,
 
