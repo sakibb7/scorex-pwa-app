@@ -4,8 +4,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const autoprefixer = require("autoprefixer");
-const HtmlWebpackSimpleIncludePlugin = require("html-webpack-simple-include-plugin");
-const WorkboxPlugin = require("workbox-webpack-plugin");
 
 // Define the root directory containing the HTML files
 const rootDirectory = path.resolve(__dirname, "src");
@@ -93,25 +91,10 @@ module.exports = {
       patterns: [
         { from: "src/assets", to: "assets" },
         { from: "src/manifest.json", to: "manifest.json" },
+        { from: "src/service-worker.js", to: "service-worker.js" },
       ],
     }),
     ...htmlFiles,
-
-    new HtmlWebpackSimpleIncludePlugin([
-      // {
-      //   tag: "<include-darkLightToggle />",
-      //   content: fs.readFileSync(
-      //     path.resolve(__dirname, "src/partials/darkLightToggle.html")
-      //   ),
-      // },
-    ]),
-
-    new WorkboxPlugin.GenerateSW({
-      // these options encourage the ServiceWorkers to get in there fast
-      // and not allow any straggling "old" SWs to hang around
-      clientsClaim: true,
-      skipWaiting: true,
-    }),
   ],
   output: {
     filename: "index.js",
