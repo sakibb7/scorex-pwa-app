@@ -92,16 +92,10 @@ module.exports = {
       patterns: [
         { from: "src/assets", to: "assets" },
         { from: "src/manifest.json", to: "manifest.json" },
-        // { from: "src/service-worker.js", to: "service-worker.js" },
+        { from: "src/service-worker.js", to: "service-worker.js" },
       ],
     }),
     ...htmlFiles,
-    new WorkboxPlugin.GenerateSW({
-      // these options encourage the ServiceWorkers to get in there fast
-      // and not allow any straggling "old" SWs to hang around
-      clientsClaim: true,
-      skipWaiting: true,
-    }),
   ],
   output: {
     filename: "index.js",

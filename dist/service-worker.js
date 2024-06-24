@@ -480,164 +480,161 @@ define(['./workbox-74854057'], (function (workbox) { 'use strict';
     "url": "assets/js/plugins/wow.min.js",
     "revision": "130ea3c4827210a8fcda0853ee3605b5"
   }, {
-    "url": "assets/js/service-worker-settings.js",
-    "revision": "127a98dcfeb82077387fd089917f9dc5"
-  }, {
     "url": "complete-profile.html",
-    "revision": "c686ea1e33d038005915e9d576b06170"
+    "revision": "a89dccd024d038810eeb6d29de9eaa0e"
   }, {
     "url": "create-new-password.html",
-    "revision": "1271c6c539829360bfeaff962cd45e35"
+    "revision": "6f6fe29109a1b631c453ceb218deaace"
   }, {
     "url": "favourite-competitions.html",
-    "revision": "59c3f1b7fa4c776ff22c1706e097f121"
+    "revision": "08794abc3a2c55baaad93410a75e2571"
   }, {
     "url": "favourite-matches.html",
-    "revision": "9d253c8e5723d7e9f75ff55fdcc82f3b"
+    "revision": "de9745280d7aa8b7cbc7cb4150e56c3e"
   }, {
     "url": "favourite-teams.html",
-    "revision": "b453f4c12359cb119bc3dbbe36fdc43a"
+    "revision": "2c2ae11c29c8d675f2393e82ea709f5a"
   }, {
     "url": "follow-competitions.html",
-    "revision": "393a55d86685ef88a21d2051f059816d"
+    "revision": "51ad5f474424a004d3189bcf6177cd4c"
   }, {
     "url": "follow-teams.html",
-    "revision": "346acfbd9d52e948ef4683673cbc5bd5"
+    "revision": "da219908f49a685ec7628da28e1950c4"
   }, {
     "url": "forget-password.html",
-    "revision": "2fbb0402a3d9a61fdd6b8bb48b19c34f"
+    "revision": "d443c15a450d923be314cbbbc48c553d"
   }, {
     "url": "general-settings.html",
-    "revision": "8c0cbae40632702d2312e1a0d532cd82"
+    "revision": "89dd8e3538ce4550e3bff19b3ad5dfdf"
   }, {
     "url": "help-center.html",
-    "revision": "3a78d1c87cc892889a062739b2c04a03"
+    "revision": "0ad98d5310eb5cb9cf675719b9e15850"
   }, {
     "url": "home.html",
-    "revision": "f99f69bd58fecace2491241c91f841ff"
+    "revision": "82f546bd32bc2d74c43fe4c8f6f5e379"
   }, {
     "url": "index.html",
-    "revision": "be47e1f22e6f2d701871c0d182127a8c"
+    "revision": "fce9f71996062d60d64105272f848247"
   }, {
     "url": "index.js",
     "revision": "5713475768adbf215fb08ff43ac4259d"
   }, {
     "url": "language.html",
-    "revision": "a4f3e3152d57c80c7416c6136afa90dd"
+    "revision": "6e0346fe8d4762ec17031f826c11a48d"
   }, {
     "url": "league-news.html",
-    "revision": "b9c07711547f198d8628232aa6a633a0"
+    "revision": "86de5f64ca9e4cd98bf35554eff92cd9"
   }, {
     "url": "league-table.html",
-    "revision": "f576460e9a8ccf91c98d2ac0dd7d108e"
+    "revision": "439118f32880d801de3744a4cce2d2ec"
   }, {
     "url": "live-match.html",
-    "revision": "9feb2c899fd321bb2eae585dee974647"
+    "revision": "3492c3113b1ee5fbcbb194ec09640955"
   }, {
     "url": "manifest.json",
     "revision": "f0f94cbbab5e956e10ab6854afe804a9"
   }, {
     "url": "match-h2h.html",
-    "revision": "177394a8b23f5473448a422accdfc713"
+    "revision": "789f4eb5631f4b10ac01edb88de071e5"
   }, {
     "url": "match-info.html",
-    "revision": "2fb9457d0d171bc36c401c20cbd9d75a"
+    "revision": "6f65a4e0930d553c84aac5a6224883e1"
   }, {
     "url": "match-lineup.html",
-    "revision": "b5b2a6a220fd9b189810a11e55a226b9"
+    "revision": "d8450227856cad56f2711bd97c684c6c"
   }, {
     "url": "match-report.html",
-    "revision": "52a80889efa8b3d4be5ad8aef41b8d58"
+    "revision": "081c0d738d0dbb48c014f4f65931b670"
   }, {
     "url": "match-stats.html",
-    "revision": "3a0e25113fc68896b51e3199a889bc6b"
+    "revision": "621ab05fb58db7c949b85607227b4d5a"
   }, {
     "url": "match-summery.html",
-    "revision": "48afbf175535bd28c0531d2874937527"
+    "revision": "a8b6f2932d4ca24521249ad17c0c19e3"
   }, {
     "url": "news-details.html",
-    "revision": "7f82f56631e361dc91e661486d84fff5"
+    "revision": "506ebb6922679d21af858981b158c0a3"
   }, {
     "url": "news-page.html",
-    "revision": "86048e6d475797b3fb4a13d178b7ea8d"
+    "revision": "38b0c7abaaad3f05a61003c51a43acb7"
   }, {
     "url": "notifications-settings.html",
-    "revision": "408782287322596e79e7b755734b4c1e"
+    "revision": "97a3ba4d15ac4bf24a8287e66fa0b668"
   }, {
     "url": "password-reset-successful.html",
-    "revision": "b4d5639cf3579248adf9085f79d06d7a"
+    "revision": "8c4ed930b158be103cf5c53c8bd0c586"
   }, {
     "url": "personal-info.html",
-    "revision": "db7e15ed257866eec1ad7d41421e2988"
+    "revision": "67a381a9fa54edbe0befd0cd8d2bcbf7"
   }, {
     "url": "player-profile.html",
-    "revision": "eb9ddf02fe3d739135a106841b8aa7f2"
+    "revision": "48f8debf9d73edfd19dcaaac6e33e2af"
   }, {
     "url": "premier-league-matches.html",
-    "revision": "aa285e52d5a64670ea020001eb97ff06"
+    "revision": "5a5fb79cc770a3a1b32b616ae5b1ab54"
   }, {
     "url": "premier-league-news.html",
-    "revision": "4cfe7d3ece3bdbc88dcbb1e1a8918c2e"
+    "revision": "9b7d25f43f5c3f2de2c0367fc3339c69"
   }, {
     "url": "premier-league-overview.html",
-    "revision": "ad6001edf63816f3e8ce324ded22a415"
+    "revision": "2be638cd147599592589e3a039290d34"
   }, {
     "url": "premier-league-player-stats.html",
-    "revision": "d922d43814b06e46047a55a5a41636c0"
+    "revision": "b9872fabb9a6de36aa2eccd1a92fc61b"
   }, {
     "url": "premier-league-table.html",
-    "revision": "dfd3c8ffcbd3a8104a1a4a2651d88be8"
+    "revision": "635e652f51206796b6769c5560274c36"
   }, {
     "url": "premier-league-team-stats.html",
-    "revision": "b7cb244783c05137809c29637686ecc5"
+    "revision": "a39d0bffd0d3f95af48226f3637dfd5b"
   }, {
     "url": "premier-league-videos.html",
-    "revision": "3f1e1abf3c5cf8756cace9ed1cd21b6a"
+    "revision": "09f9109ba925e5f9d681ebde66c9461d"
   }, {
     "url": "search.html",
-    "revision": "c344037a9f0ffaa0d31ab0dfd5bbf9a2"
+    "revision": "268c6686c3c83a8e671370f2d57e399f"
   }, {
     "url": "security.html",
-    "revision": "722866b187d755ba137937da47ff982d"
+    "revision": "04c84ae5f0801ab186af2828b9e845a7"
   }, {
     "url": "set-notifications.html",
-    "revision": "08b0f8a523bf9161402b4cbc92849713"
+    "revision": "4e29c2d268ac8f17d0b4e4b4ce30651e"
   }, {
     "url": "settings.html",
-    "revision": "be15aa48a92f04d2770c3436e6959c9e"
+    "revision": "938f85326eeaccc04dcefa6fc1914af4"
   }, {
     "url": "sign-in.html",
-    "revision": "e86a17e0004c32c10fb18cb56e4a520a"
+    "revision": "d15eb5a264d9d87dd3cbeedb1d7f9ad7"
   }, {
     "url": "sign-up-successful.html",
-    "revision": "edbf4f831bb6bde242c794006b673245"
+    "revision": "3c66abd21805672d743e195a883e8ce1"
   }, {
     "url": "sign-up.html",
-    "revision": "6d2b3f1cc26ada47e63178932e507425"
+    "revision": "f2461aab44b7deaed7ecd14499d40f92"
   }, {
     "url": "style.css",
     "revision": "625012b74810c12ba24c99ef3c404ede"
   }, {
     "url": "team-matches.html",
-    "revision": "7d3c713eb13fdbf130498b870be09abd"
+    "revision": "b5e29940c03c7d88a4c38e4562c111bf"
   }, {
     "url": "team-overview.html",
-    "revision": "7d449d901ad1c5b61d48a0e0defd4cf9"
+    "revision": "00a2708b9ebbf52b73a81e61669c7d86"
   }, {
     "url": "team-stats.html",
-    "revision": "db64c683c9a072f522b898d34a1f8367"
+    "revision": "72835a69acc0d809d3c8e8f8ce8adefb"
   }, {
     "url": "terms-conditions.html",
-    "revision": "384959d9cc2cbda23d43fa53cdf81fc8"
+    "revision": "de9490f143b9fd5e781f28826ff4fc73"
   }, {
     "url": "verify-otp.html",
-    "revision": "5516e8107824a22b30e0223cb9ad2b6f"
+    "revision": "c8af179d0c7247539c02232f3cd62d7c"
   }, {
     "url": "video-details.html",
-    "revision": "7305052b9a6697f7a03e7bc80b27df54"
+    "revision": "035d04f2d58d1f7467912926c28583b0"
   }, {
     "url": "video-page.html",
-    "revision": "b51efaea5c5cb6c18347c6cd55c464a1"
+    "revision": "0401413688b2e5e9e5dfcb1ade1207ca"
   }], {});
 
 }));
